@@ -1,0 +1,70 @@
+/* Varibale Declaration */
+:root {
+  /* colors */
+  --background: #fcfcfc;
+  --pri-t: #180126;
+  --sec-t: #b8b4b4;
+  --pri-c: #089285;
+  --sec-c: #f34213;
+  /* typography */
+  --font: "Inter", sans-serif;
+  /* Web Size */
+  --wh1: 37px;
+  --wh2: 28px;
+  --wh3: 21px;
+  /* headings labels links buttons */
+  --wh6: 16px;
+  /* paragraph text subheadings */
+  --wp: 16px;
+  /* Mobile Size */
+}
+
+/* Text */
+
+/* Styles */
+
+body {
+  background: var(--background);
+  font-family: var(--font);
+}
+h1 {
+  font-size: var(--wh1);
+  font-weight: normal;
+}
+h2 {
+  font-size: var(--wh2);
+  font-weight: normal;
+}
+h3 {
+  font-size: var(--wh3);
+  font-weight: normal;
+}
+h6 {
+  font-size: var(--wh6);
+  font-weight: bold;
+}
+p {
+  font-size: var(--wp);
+  font-weight: normal;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--background);
+  overflow: hidden;
+}
+li {
+  float: left;
+  padding-left: 50px;
+}
+
+a {
+  display: block;
+  color: var(--pri-t);
+  padding: 8px;
+  background-color: #dddddd;
+}
