@@ -60,11 +60,79 @@ ul {
 li {
   float: left;
   padding-left: 50px;
+  font-size: var(--wh6);
+  font-weight: bold;
 }
 
 a {
   display: block;
   color: var(--pri-t);
+  font-size: var(--wh6);
+  font-weight: bold;
   padding: 8px;
-  background-color: #dddddd;
+  background-color: var(--background);
+  text-decoration: none;
+}
+
+.footer .content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 2px;
+  grid-template-rows: 1fr 1fr;
+}
+.quick-links {
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+.stores {
+  justify-self: start;
+  grid-column: 2/3;
+  grid-row: 1/3;
+}
+.follow {
+  justify-self: start;
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+.follow div {
+  display: flex;
+  justify-content: flex-start;
+}
+.email {
+  justify-self: start;
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+.fab {
+  color: var(--pri-c);
+}
+
+.selected {
+  color: var(--pri-c);
+}
+.right {
+  float: right;
+}
+.middle {
+}
+.content {
+  padding: 25px 150px;
+}
+.ans {
+  color: var(--sec-t);
+}
+.y-btn {
+  color: var(--background);
+  background-color: var(--pri-c);
+}
+button {
+  border: none;
+  border-radius: 20px;
+  height: 3rem;
+  width: 9rem;
+}
+.oth-btn {
+  color: var(--pri-c);
+  background-color: var(--background);
+  border: 2px solid var(--pri-c);
 }
