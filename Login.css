@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center
+  
+}
+
+.box {
+  background-color: #fcfcfc;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  overflow-y: scroll;
+}
+
+.makeup img {
+  max-width: 100%;
+  height: auto;
+  margin-left: 2em;
+  margin-top: 0%;
+}
+
+h1 {
+    color: #089285;
+    font-size: 19px;
+    margin-top: .5em;
+}
+
+h2 {
+    color: #089285;
+    font-size: 16px;
+}
+
+a {
+    color: #089285;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+
+input  {
+      height: 40px;
+      width: 20.5em;
+      top: 10px;
+      border-top-style: hidden;
+      border-right-style: hidden;
+      border-left-style: hidden;
+      border-bottom-style: groove;
+      border-bottom: 1px solid #089285 ;
+      background: transparent;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      color: #089285;
+      font-weight: 400;
+      
+    }
+  
+
+
+#email {
+    outline: none;
+    margin-top: 1em;
+}
+  
+#pass {
+    outline: none;
+}
+
+.pass-forgot {
+    margin-left: 12.5em;
+}
+
+button {
+    background-color: #089285;
+    color: #fcfcfc;
+    width: 20.5em;
+    border: none;
+    text-align: center;
+    border-radius: 2em;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 5px;
+}
+button:hover {
+    background-color: #065c53;
+}
+
+.button.login {
+    margin-top: 5em;
+}
+
+.bottom {
+    justify-content: space-between;
+    margin-bottom: 3em;
+}
+
+.account {
+    margin-left: 1em;
+}
+
+.register {
+    margin-left: 7em;
+}
+
+@media screen and (min-width : 750px) {
+    h1 {
+        font-size: 37px;
+    }
+    h2 {
+        font-size: 28px;
+    }
+
+    button {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    input {
+        font-size: 16px;
+    }
+
+    a {
+        font-size: 14px;
+    }
+
+
+}
