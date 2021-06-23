@@ -10,6 +10,7 @@
 body {
     font-family: 'Inter', sans-serif;
     min-height: 100vh;
+    
 }
 
 .container {
@@ -21,51 +22,55 @@ body {
 }
 
 .box {
-  background-color: #fcfcfc;
+  max-width: 100%;
+  height: auto;  
+  background-color: #fcfcfc98;
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 70%;
   transform: translate(-50%, -50%);
-  overflow-y: scroll;
+  
+  
 }
 
 .makeup img {
   max-width: 100%;
   height: auto;
-  margin-left: 2em;
   margin-top: 0%;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 h1 {
     color: #089285;
-    font-size: 19px;
+    font-size: 1.188em;
     margin-top: .5em;
 }
 
 h2 {
     color: #089285;
-    font-size: 16px;
+    font-size: 1em;
 }
 
 a {
     color: #089285;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 0.750em;
 }
 
 
 input  {
-      height: 40px;
+      height: 2.500em;
       width: 20.5em;
-      top: 10px;
+      top: 0.625em;
       border-top-style: hidden;
       border-right-style: hidden;
       border-left-style: hidden;
-      border-bottom-style: groove;
-      border-bottom: 1px solid #089285 ;
+      border-bottom: 0.063em solid #089285 ;
       background: transparent;
       font-family: 'Inter', sans-serif;
-      font-size: 14px;
+      font-size: 0.875em;
       color: #089285;
       font-weight: 400;
       
@@ -84,6 +89,12 @@ input  {
 
 .pass-forgot {
     margin-left: 12.5em;
+    
+}
+@media screen and (max-width: 290px) {
+    .pass-forgot {
+        margin-left: 0;
+}
 }
 
 button {
@@ -94,8 +105,10 @@ button {
     text-align: center;
     border-radius: 2em;
     cursor: pointer;
-    font-size: 14px;
-    padding: 5px;
+    font-size: 0.875empx;
+    padding: 0.313em;
+    display: block;
+    width: 100%;
 }
 button:hover {
     background-color: #065c53;
@@ -118,25 +131,55 @@ button:hover {
     margin-left: 7em;
 }
 
-@media screen and (min-width : 750px) {
+
+/*for desktop view*/
+
+@media (min-width: 960px) {
+    
+    .container {
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    .box {
+        background-color: transparent;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        
+    }
+      
+    .makeup img {
+        max-width: 100%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index:999;
+        float: right;
+         
+    }
+
     h1 {
-        font-size: 37px;
+        font-size: 2.313em;
     }
     h2 {
-        font-size: 28px;
+        font-size: 1.750em;
     }
 
     button {
-        font-size: 16px;
+        font-size: 1em;
         font-weight: 500;
     }
 
     input {
-        font-size: 16px;
+        font-size: 1em;
     }
 
     a {
-        font-size: 14px;
+        font-size: 0.875em;
     }
 
 
