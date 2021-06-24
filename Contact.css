@@ -6,14 +6,12 @@
 }
 
 :root{
---lgreycolor: hsl(0, 0%, 95%);
---twhitecolor: hsla(0, 0%, 100%, 0.75);
---borangecolor: hsl(31, 77%, 52%);
---dcyancolor:hsl(184, 100%, 22%);
---vdcyancolor:hsl(179, 100%, 13%);
---bodycopy: 15px;
---smallfont: "Lexend Deca", sans-serif;
---largefont: "Big Shoulders Display", sans-serif;
+--greycolor: #949494;
+--whitecolor: #fff;
+--dcyancolor: #089285;
+--headercopy: 37px;
+--bodycopy: 16px;
+--font: "Inter", sans-serif;
 --containermargin: 4rem;
 --cardpadding: 50px;
 --copypadding:30px;
@@ -23,6 +21,6 @@
 --buttonmargin:45px;
 --cardheight: 500px;
 --buttonwidth: 150px;
---corners: 10px;
+--corners: 20px;
 
 }
