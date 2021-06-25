@@ -8,8 +8,8 @@
     <meta name="description" content="Contact Us Here">
     <title>Contact Us</title>
 
-    <link href="styles.css" rel="stylesheet">
-    <link href="responsive.css" rel="stylesheet">
+    <link href="contact.css" rel="stylesheet">
+   
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,64 +22,87 @@
 
 
 <body>
+    <nav>
+
+    </nav>
     <main>
-        <div class="container">
-            <div class="header">
-                <img src="images/contact us banner.png" alt="contact us banner">
-                <h1 class="contactheader">Contact Us</h1>
-                <p>Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on
-                    your next
-                    road trip.</p>
 
-
-            </div>
-
-
+        <div class="header">
+            <img class="banner" src="images/contact us banner.png" alt="contact us banner">
+            <h1 class="contactheader">Contact Us</h1></div>
 
             <div class="getintouch">
-          
+            
                 <h1 class="getintouchheader">Get In Touch With Us</h1>
-                <p>Please contact us using the information below.</p>
-
-
+                <p class="touchtext">Please contact us using the information below.</p>
+            
+            
             </div>
 
+            <div class="contactlinks">
 
+                <div class="mail">
+                    <img src="images/mail.png" alt="email icon">
+    
+                    <p>Email Support</p>
+                    <a href="mailto:info@scalables.com" class="info">info@scalables.com</a>
+                
+                </div>
+                
+                
+                
+            <div class="call">
+                <img src="images/phone-call.png" alt="phone icon">
+            
+                <p>Call Us</p>
+                <a href="tel:+234-123-451-2345" class="info">(+234) 123 451 2345</a>
+            
+            </div>
+                
+                
+            <div class="address">
+                    <img src="images/map-pin.png" alt="location icon">
+                    
+                        <p>Address</p>
+                        <p class="info">Scalables LLC, Maitama, Abuja Nigeria.</p>
+                    
+                    </div>
+            </div>
+
+        <div class="container">
 
             <div class="contactfields">
             
-        
-                <p>If You Got Any Questions
-                Please Do Not Hesitate To Message Us</p>
+                <h2>If You Got Any Questions
+                Please Do Not Hesitate To Message Us</h2>
 
                 <form class="iform">
-                    <input type="text" class="fname" placeholder="  Enter subject ">
+                    <p>Subject<span class="asterisk">*</span></p>
+                    <input type="text" class="subject" placeholder="  Enter subject ">
+
+                    <p>Email<span class="asterisk">*</span></p>
                     <input type="email" class="uemail" placeholder="  Enter your email">
-                    <input type="text" class="uemail" placeholder="   ">
-                    
+
+                    <p>Message<span class="asterisk">*</span></p>
+                   <textarea class="message" name="message" rows="6" cols="50"></textarea>
+                  
                 
                     <input type="submit" class="contactbutton" value="Submit">
                 </form>
-            
-                <button type="button">Learn More</button>
-                <img src="images/contact us banner.png" alt="contact us banner">
-            
+
+            <p class="scale">Please note that Scalables does not sell any products. To follow up on your order or resolve any issues please contact
+            the store you ordered from directly.</p>
+
             </div>
+            <div class="helloside">
+                <img class="hello" src="images/hello image.png" alt="contact us banner">
+            <input type="submit" class="bthbutton" value="Back to Home">
 
-
-            <div class="luxury">
-                <img src="images/icon-luxury.svg" alt="luxury car icon">
-                <h1>Luxury</h1>
-                <p>Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury
-                    rental and
-                    arrive in style.</p>
-
-
-                <button type="button">Learn More</button>
 
             </div>
 
-        </div>
+            </div>
+ 
 
 
     </main>
