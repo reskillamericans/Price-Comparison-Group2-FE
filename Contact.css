@@ -47,7 +47,8 @@
 body{
     font-family: var(--font);
     background-color: var(--whitecolor);
-
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
 
 header {
@@ -366,6 +367,7 @@ background-color: var(--hovercolor);
 
 .scale{
     padding-top: var(--largespacing);
+    color: var(--greycolor);
     clear:both;
 }
 
@@ -427,13 +429,7 @@ h3 {
 .social {
 	padding: 5px;
 }
-footer {
-	display: flex;
-	justify-content: center;
-	width: 72%;
-	position: relative;
-	left: 7cm;
-}
+
 
 .quick-links{
     padding-right: 20px;
@@ -452,7 +448,7 @@ footer {
 
 .Follow{
 
-    padding-left: 100px;
+    padding-left: 60px;
     min-width:500px;
     grid-area: h;
       text-align: center;
@@ -460,4 +456,25 @@ footer {
 
 .amazon{
   height: 40px;
+}
+
+.disclaimer{
+    padding-top: var(--largespacing);
+    text-align: left;
+    color: var(--greycolor);
+    margin-left: 4rem;
+    width: 600px;
+
+
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	width: 72%;
+	position: relative;
+	left: 7cm;
+
+    padding-top: 6rem;
+    padding-bottom: 2rem;
 }
