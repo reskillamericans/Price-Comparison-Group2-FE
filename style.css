@@ -1,1 +1,90 @@
-/* Write the Landing page styling here */
+/* Style for the Fonts and Nav bar */
+
+/* Varible Declaration */
+:root {
+  /* colors */
+  --background: #fcfcfc;
+  --pri-t: #180126;
+  --sec-t: #b8b4b4;
+  --pri-c: #089285;
+  --sec-c: #f34213;
+  --navb-c: #ebebeb;
+
+  /* typography */
+  --font: "Inter", sans-serif;
+
+  /* Web Size */
+  --wh1: 37px;
+  --wh2: 28px;
+  --wh3: 21px;
+  /* headings labels links buttons */
+  --wh6: 16px;
+  /* paragraph text subheadings */
+  --wp: 16px;
+
+  /* Mobile Size */
+  /* SOON TO COME */
+}
+
+/* Text Styles*/
+body {
+  background: var(--background);
+  font-family: var(--font);
+  margin: 0;
+}
+h1 {
+  font-size: var(--wh1);
+  font-weight: normal;
+}
+h2 {
+  font-size: var(--wh2);
+  font-weight: normal;
+}
+h3 {
+  font-size: var(--wh3);
+  font-weight: normal;
+}
+h6 {
+  font-size: var(--wh6);
+  font-weight: bold;
+}
+p {
+  font-size: var(--wp);
+  font-weight: normal;
+}
+
+/* Nav Bar */
+header {
+  margin-top: 0;
+  background-color: var(--navb-c);
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 10vh;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  padding-left: 100px;
+  padding-right: 50px;
+}
+ul {
+  list-style-type: none;
+  padding: 0 50px 0 50px;
+  top: 0;
+  overflow: hidden;
+}
+
+ul li {
+  float: left;
+  padding-left: 50px;
+  font-size: var(--wh6);
+}
+
+a {
+  color: var(--sec-t);
+  font-size: var(--wh6);
+  font-weight: bold;
+  text-decoration: none;
+}
