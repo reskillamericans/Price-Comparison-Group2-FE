@@ -1,9 +1,10 @@
 
-@media all and (max-width:30em) {
-    
+
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    
 }
 
 body {
@@ -11,20 +12,67 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-.topnav {
-    background-color: transparent;
-    border-color: transparent;
-    padding: 15px;
-}
+header {
+         display: none;
+     }
 
-.topnav a {
+
+nav {
+    padding-top:0.625em ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
     
-    font-size: 10px;
-    font-weight: 500;
-    color: #b8b4b4;
-    text-decoration: none;
-
 }
+nav img {
+    max-width:100%;
+    height:auto;
+}
+.mobile-icons{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 0%;
+    cursor: pointer;
+}
+.mobile-text {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  font-size: 0.625em;
+  color: #b8b4b4;
+  cursor: pointer;
+}
+#home-icon-position {
+    position: relative;
+    right:0.313em ;
+}
+
+#login-icon-position {
+    position: relative;
+}
+#faq-icon-position{
+    position: relative;
+    right: 0.313em;
+}
+
+.home-icon:hover {
+    color: #089285
+}
+.about-icon:hover {
+    color: #089285
+}
+.faq-icon:hover {
+    color: #089285
+}
+.contact-icon:hover {
+    color: #089285
+}
+.login-icon:hover {
+    color: #089285
+}
+
 
 .main {
     align-items: center;
@@ -37,24 +85,25 @@ body {
 
 h1 {
     color: #f34213;
-    font-size: 19px;
-    font-weight: 500;
+    font-size: 1.188em;
+    font-weight: normal;
+    margin-top: 2em;
     margin-bottom: 0%;
     padding-left: .43em;
 }
 
 h2 {
     color: #f34213;
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 0.875em;
+    font-weight: normal;
     margin-top: 0%;
-    padding-left: .5em;
+    padding-left: .7em;
 }
 
 p {
-    font-size: 14px;
+    font-size: 0.875em;
     color: black;
-    line-height: 20px;
+    line-height: 1.250em;
     text-align: justify;
     padding: 1em;
 
@@ -64,6 +113,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 1em;
 }
 .left li {
     color: black;
@@ -80,49 +130,214 @@ li.bold {
     font-weight: 500;
 }
 
-.button {
-    align-items: center;
+
+.amazon{
+    position: relative;
+    right: 17px;
+}
+.price-a {
+    position: relative;
+    right: 16px;
+}
+.ebay {
+    position: relative;
+    left: 25px;
+}
+.price-e {
+    position: relative;
+    left: 16px;
+}
+
+button {
+    display: inline-block;
+    position: relative;
 	background-color:#089285;
 	border-radius: 2em;
-	display:inline-block;
+    border-style: none;
 	cursor:pointer;
 	color:#ffffff;
 	font-family: 'Inter', sans-serif;
     font-weight: 500;
-	padding: 0.3em 1.2em;
-    margin:0 0.3em 0.3em 0;
+	padding: 0.5em 3em;
+    width: 100%;
 	text-decoration:none;
-    text-align: center;
 }
-.button:hover {
-	background-color:#065c53;;
+button:hover {
+	background-color:#065c53;
 }
-.button:active {
-	position:relative;
-	top:1px;
+.btn1{
+    margin-top: 1em;
+   position: relative;
+   right: 1em;
+}
+.btn2{
+    margin-top: 1em;
+    position: relative;
+    left: 1em;
+
 }
 
-.footer {
+
+.icons {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+  
+    padding-top: 20px;
 }
-.icons{
-    margin-left: 4em;
-    margin-bottom: 0%;
+.like-icon {
+    padding-left: 40px;
+    padding-right: 40px;
 }
-.words {
-    margin-left: 4em;
-    margin-top: 0%;
+.like-icon:hover {
+    cursor: pointer;
 }
-.footer li {
-    list-style: none;
-    display: inline;
-    float: left;
+  
+.comment-icon:hover {
+    cursor: pointer;
+}
+.share-icon {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.share-icon:hover {
+    cursor: pointer;
+}
+.icons-text {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
     color: #f34213;
     font-size: 12px;
+    margin-bottom: em;
 }
-.footer img {
+.like {
+    position: relative;
+    right: 10px;
+    padding: 5px;
+}
+.comment {
+    position: relative;
+    left: 2px;
+    padding: 5px;
+}
+.share {
+    position: relative;
+    left: 13px;
+    padding: 5px;
     
+}
+
+
+/*DESKTOP VIEW*/
+
+@media screen and (min-width: 500px) {
+
+body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+nav {
+display: none;
+}
+
+header {
+    display: flex;
+    background-color: #f9f9f9;
+    height: 4em;
+}
+
+.logo {
+    position: relative;
+    left: 5em;
+    margin-top: .5em;
+}
+
+.navbar {
+   position: relative;
+   left: 17em;
+   margin-top: 1.5em;
+}
+.register-login {
+    position: relative;
+    left: 25em;
+    margin-top: 1.5em;
+}
+
+.navbar ul {
+    list-style-type: none;
+}
+
+header li {
+    float: left;
+    list-style: none;
+}
+
+header a {
+    padding: 1em;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    color: #b8b4b4;
+}
+
+.home:hover {
+    color: #089285;
+}
+.about:hover {
+    color: #089285;
+}
+.faq:hover {
+    color: #089285;
+}
+.blog:hover {
+    color: #089285;
+}
+.contact:hover {
+    color: #089285;
+}
+.register:hover {
+    color: #089285;
+}
+.login:hover {
+    color: #089285;
+}
+
+h1 {
+    font-size: 37px;
+}
+h2{
+    font-size: 28px;
+}
+
+.container {
+    margin-left: 6em;
+}
+p {
+    display: table;
+    position: relative;
+    bottom: 20em;
+    left: 10em;
+    margin:auto;
+    font-size: 1em;
+    width: 40em;
+}
+
+.prices {
+    position: relative;
+    bottom: 20em;
+    left: 11em ;
+}
+
+.main img {
+    position: relative;
+    right: 5em;
 
 }
-} 
+
+.social-icons {
+    position: relative;
+    right: 20.4em;
+    bottom: 16em;
+}
+}
