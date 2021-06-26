@@ -24,7 +24,7 @@
 --buttonpadding:10px;
 --buttonmargin:10px;
 --fieldpadding:1rem;
---fieldwidth:650px;
+--fieldwidth:850px;
 --textwidth: 220px;
 --buttonwidth: 300px;
 --largespacing: 80px;
@@ -47,6 +47,11 @@ body{
         background-color: var(--whitecolor);
 
     }
+
+
+
+
+
 
 .banner{
         margin-top: var(--largemargin);
@@ -181,7 +186,7 @@ padding:1rem;
 
 .contactfields{
 grid-area: d;
-width: 650px;
+width: 850px;
 
 
 display: block;
@@ -259,7 +264,7 @@ grid-area: e;
 margin-top: 6rem;
 padding:2rem;
 
-display: block;
+
 }
 
 
