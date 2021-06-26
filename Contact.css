@@ -18,13 +18,14 @@
 --font: "Inter", sans-serif;
 --largemargin: 10rem;
 --containermargin: 4rem;
+--headermargin:2rem;
 --smallmargin:2rem;
 --corners: 30px;
 --halfcorners: 20px;
 --buttonpadding:10px;
 --buttonmargin:10px;
 --fieldpadding:1rem;
---fieldwidth:850px;
+--fieldwidth:650px;
 --textwidth: 220px;
 --buttonwidth: 300px;
 --largespacing: 80px;
@@ -48,16 +49,120 @@ body{
 
     }
 
+header {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 0 auto;
+	background-color: #fcfcfc;
+	width: 100%;
+	padding: 15px;
+}
 
+
+
+nav {
+	display: none;
+}
+
+.navbar {
+	display: flex;
+	padding: 10px;
+	width: 500px;
+	justify-content: flex-end;
+	font-weight: bolder;
+}
+
+.home {
+	padding-left: 20px;
+	padding-right: 20px;
+	cursor: pointer;
+}
+.home:hover {
+	background-color: #065c53;
+	color: #fcfcfc;
+}
+
+.about-us {
+	padding-left: 20px;
+	padding-right: 20px;
+	cursor: pointer;
+}
+.about-us:hover {
+	background-color: #065c53;
+	color: #fcfcfc;
+}
+.faq {
+	padding-left: 20px;
+	padding-right: 20px;
+	cursor: pointer;
+}
+.faq:hover {
+	background-color: #065c53;
+	color: #fcfcfc;
+}
+.blog {
+	padding-left: 20px;
+	padding-right: 20px;
+	cursor: pointer;
+}
+.blog:hover {
+	background-color: #065c53;
+	color: #fcfcfc;
+}
+.contact-us {
+	padding-left: 20px;
+	padding-right: 20px;
+	cursor: pointer;
+}
+.contact-us:hover {
+	background-color: #065c53;
+	color: #fcfcfc;
+}
+
+.logo {
+	display: flex;
+	width: 500px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.logo:hover {
+	cursor: pointer;
+}
+
+.register-login {
+	display: flex;
+	padding: 10px;
+	width: 150px;
+	justify-content: flex-end;
+	font-weight: bolder;
+}
+.register {
+	padding-left: 20px;
+	padding-right: 20px;
+	cursor: pointer;
+}
+.register:hover {
+	background-color: #065c53;
+	color: #fcfcfc;
+}
+.login {
+	padding-left: 20px;
+	padding-right: 20px;
+	cursor: pointer;
+}
+.login:hover {
+	background-color: #065c53;
+	color: #fcfcfc;
+}
 
 
 
 
 .banner{
-        margin-top: var(--largemargin);
+        margin-top: var(--headermargin);
         text-align: center;
     }
-.header{
+.headerimg{
 
     position: relative;
 
@@ -186,7 +291,7 @@ padding:1rem;
 
 .contactfields{
 grid-area: d;
-width: 850px;
+width: 650px;
 
 
 display: block;
