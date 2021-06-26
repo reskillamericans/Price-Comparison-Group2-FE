@@ -2,17 +2,18 @@
     margin: 0;
     padding: 0rem;
     box-sizing: border-box;
-    
+
 }
 
 :root{
 --greycolor: #949494;
---whitecolor: #fff;
+--whitecolor: #fcfcfc;
 --cyancolor: #089285;
 --hovercolor:#065c53;
 --redcolor: rgb(202, 25, 25);
 --headercopy: 37px;
 --fieldsummary:28px;
+--externallinks:21px;
 --bodycopy: 16px;
 --copymargin:2rem;
 --font: "Inter", sans-serif;
@@ -44,10 +45,10 @@
 }
 
 body{
+    font-family: var(--font);
+    background-color: var(--whitecolor);
 
-        background-color: var(--whitecolor);
-
-    }
+}
 
 header {
 	display: flex;
@@ -62,14 +63,17 @@ header {
 
 nav {
 	display: none;
+
 }
 
 .navbar {
+    
 	display: flex;
 	padding: 10px;
 	width: 500px;
-	justify-content: flex-end;
-	font-weight: bolder;
+    font-weight: bolder;
+    margin-left: -200px;
+
 }
 
 .home {
@@ -78,8 +82,8 @@ nav {
 	cursor: pointer;
 }
 .home:hover {
-	background-color: #065c53;
-	color: #fcfcfc;
+    background-color: var(--hovercolor);
+    color: var(--whitecolor);
 }
 
 .about-us {
@@ -88,8 +92,8 @@ nav {
 	cursor: pointer;
 }
 .about-us:hover {
-	background-color: #065c53;
-	color: #fcfcfc;
+    background-color: var(--hovercolor);
+    color: var(--whitecolor);
 }
 .faq {
 	padding-left: 20px;
@@ -97,8 +101,8 @@ nav {
 	cursor: pointer;
 }
 .faq:hover {
-	background-color: #065c53;
-	color: #fcfcfc;
+    background-color: var(--hovercolor);
+    color: var(--whitecolor);
 }
 .blog {
 	padding-left: 20px;
@@ -106,8 +110,8 @@ nav {
 	cursor: pointer;
 }
 .blog:hover {
-	background-color: #065c53;
-	color: #fcfcfc;
+    background-color: var(--hovercolor);
+    color: var(--whitecolor);
 }
 .contact-us {
 	padding-left: 20px;
@@ -115,8 +119,8 @@ nav {
 	cursor: pointer;
 }
 .contact-us:hover {
-	background-color: #065c53;
-	color: #fcfcfc;
+    background-color: var(--hovercolor);
+    color: var(--whitecolor);
 }
 
 .logo {
@@ -151,8 +155,8 @@ nav {
 	cursor: pointer;
 }
 .login:hover {
-	background-color: #065c53;
-	color: #fcfcfc;
+    background-color: var(--hovercolor);
+    color: var(--whitecolor);
 }
 
 
@@ -200,7 +204,7 @@ nav {
 }
 .contactheader{
     position: absolute;
-    top: 75%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%,-50%);
 
@@ -241,6 +245,7 @@ p, a{
 
 a:hover{
     color: var(--hovercolor);
+   
 }
 
 
@@ -388,4 +393,71 @@ height: var(--buttonheight);
 .bthbutton:hover{
 background-color: var(--hovercolor);
 color: var(--whitecolor);
+}
+
+
+.container-4 {
+margin-left: 4rem;
+
+margin-bottom: var(--smallmargin);
+
+margin-right: 12rem;
+
+ display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /*grid-template-rows: [row-start] 1fr [row-2] 1fr;*/
+    
+    grid-template-areas: 
+    "f g h" ;
+}
+
+ul {
+	list-style: none;
+
+}
+li {
+	padding-top: 5px;
+	padding-bottom: 5px;
+
+}
+
+h3 {
+	font-size: var(--externallinks);
+}
+.social {
+	padding: 5px;
+}
+footer {
+	display: flex;
+	justify-content: center;
+	width: 72%;
+	position: relative;
+	left: 7cm;
+}
+
+.quick-links{
+    padding-right: 20px;
+    min-width: var(--textwidth);
+    grid-area: f;
+    text-align: left;
+}
+
+.stores{
+    padding-right: 20px;
+    min-width: 300px;
+    grid-area: g;
+    text-align: center;
+
+}
+
+.Follow{
+
+    padding-left: 100px;
+    min-width:500px;
+    grid-area: h;
+      text-align: center;
+}
+
+.amazon{
+  height: 40px;
 }
