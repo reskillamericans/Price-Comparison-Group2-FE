@@ -196,7 +196,7 @@ nav {
 
 }
 
-.container{
+.ccontainer{
     margin: var(--containermargin);
     border-radius: var(--corners);
     text-align: center;
@@ -420,7 +420,7 @@ color: var(--whitecolor);
 }
 
 
-.container-4 {
+.container-4c {
 margin-left: 4rem;
 
 margin-bottom: var(--smallmargin);
@@ -453,7 +453,7 @@ h3 {
 }
 
 
-.quick-links{
+.cquick-links{
     padding-right: 20px;
     min-width: var(--textwidth);
     grid-area: f;
@@ -471,7 +471,7 @@ h3 {
 a:link{
     text-decoration: none;
 }
-.stores{
+.cstores{
     padding-right: 20px;
     min-width: 300px;
     grid-area: g;
@@ -479,7 +479,7 @@ a:link{
 
 }
 
-.follow{
+.cfollow{
 
     padding-left: 60px;
     min-width:500px;
@@ -676,7 +676,7 @@ display: none;
 }
 
 
-.container-4 {
+.container-4c {
 margin-left: 4rem;
 
 margin-bottom: var(--smallmargin);
@@ -695,7 +695,7 @@ h3 {
 }
 
 
-.quick-links{
+.cquick-links{
     padding-right: 20px;
     min-width: var(--textwidth);
     margin-bottom: 2rem;
@@ -710,13 +710,13 @@ h3 {
     color: var(--whitecolor);
 }
 
-.stores{
+.cstores{
     text-align: left;
     padding-right: 20px;
       margin-bottom: 2rem;
 }
 
-.follow{
+.cfollow{
     padding-left:unset;
     text-align: left;
     min-width:500px;
