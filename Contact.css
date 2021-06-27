@@ -197,7 +197,7 @@ nav {
     text-align: center;
   
 
-     display: grid;
+    display: grid;
     grid-template-columns: 2fr 1fr;
     /*grid-template-rows: [row-start] 1fr [row-2] 1fr;*/
     
