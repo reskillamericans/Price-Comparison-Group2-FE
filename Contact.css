@@ -177,9 +177,8 @@ nav {
 header {
 	display: flex;
 	justify-content: space-evenly;
-	margin: 0 auto;
+	margin: auto;
 	background-color: var(--whitecolor);
-	color: #b8b4b4;
 	width: 70%;
 	padding: 15px;
 }
@@ -209,6 +208,7 @@ header {
 }
 
 .about-us {
+    
 	padding-left: 20px;
 	padding-right: 20px;
 	cursor: pointer;
@@ -713,9 +713,10 @@ a:link{
 
 .notification{
 width: 30px;
-right: 140px;
-top: 80px;
-position:absolute;
+float: right;
+bottom: 40px;
+left:10px;
+position:relative;
 
 }
 .iphone {
