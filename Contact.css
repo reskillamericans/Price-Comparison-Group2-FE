@@ -172,6 +172,107 @@ nav {
 }*/
 
 
+header {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 0 auto;
+	background-color: #fcfcfc;
+	color: #b8b4b4;
+	width: 70%;
+	padding: 15px;
+}
+
+.navbar {
+	display: flex;
+	padding: 10px;
+	width: 600px;
+
+	font-weight: bolder;
+}
+
+.home {
+	padding-left: 20px;
+	padding-right: 20px;
+	cursor: pointer;
+}
+.home:hover {
+	background-color: #065c53;
+	color: #fcfcfc;
+}
+
+.about-us {
+	padding-left: 20px;
+	padding-right: 20px;
+	cursor: pointer;
+}
+.about-us:hover {
+	background-color: #065c53;
+	color: #fcfcfc;
+}
+.faq {
+	padding-left: 20px;
+	padding-right: 20px;
+	cursor: pointer;
+}
+.faq:hover {
+	background-color: #065c53;
+	color: #fcfcfc;
+}
+.blog {
+	padding-left: 20px;
+	padding-right: 20px;
+	cursor: pointer;
+}
+.blog:hover {
+	background-color: #065c53;
+	color: #fcfcfc;
+}
+.contact-us {
+	padding-left: 20px;
+	padding-right: 20px;
+	cursor: pointer;
+}
+.contact-us:hover {
+	background-color: #065c53;
+	color: #fcfcfc;
+}
+
+.logo {
+	display: flex;
+	width: 200px;
+
+	cursor: pointer;
+}
+.logo:hover {
+	background-color: #065c53;
+	color: #fcfcfc;
+}
+
+.register-login {
+	display: flex;
+	padding: 10px;
+	width: 150px;
+
+	font-weight: bolder;
+}
+.register {
+	cursor: pointer;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+.register:hover {
+	background-color: #065c53;
+	color: #fcfcfc;
+}
+.login {
+	padding-left: 20px;
+	padding-right: 20px;
+	cursor: pointer;
+}
+.login:hover {
+	background-color: #065c53;
+	color: #fcfcfc;
+}
 
 .banner{
         margin-top: var(--headermargin);
@@ -497,7 +598,11 @@ a:link{
     margin-left: 4rem;
     width: 600px;
 
-
+}
+.disclaimer-copyright{
+    margin-left: 3rem;
+    display: none;
+  
 }
 
 footer {
@@ -509,6 +614,12 @@ footer {
     padding-top: 6rem;
     padding-bottom: 2rem;
 }
+
+.mobile-footer{
+
+display: none;
+}
+
 }
 
 
@@ -556,7 +667,6 @@ display:list-item;
 .address{
     min-width: var(--textwidth);
     text-align: center;
-    margin-bottom: 2rem;
 }
 
 
@@ -574,7 +684,6 @@ margin-bottom: var(--copymargin);
 
 h2{
 font-family: var(--font);
-padding-top: var(--copypadding);
 padding-bottom: var(--copypadding);
 margin-left: 70px;
 margin-right: 70px;
@@ -725,21 +834,33 @@ h3 {
   height: 40px;
 }
 
+
 .disclaimer{
     padding-top: var(--largespacing);
     text-align: left;
     color: var(--greycolor);
     margin-left: 4rem;
-    width: 400px;
+    width: 600px;
+   display: none;
+}
 
+.disclaimer-copyright{
+    margin-left: 3rem;
+    display: block;
 
 }
 
-footer {
-	width: 100px;
-    padding-top: 6rem;
-    padding-bottom: 2rem;
+.copyright{
+
+    display: none;
 }
 
 
+.mobile-footer{
+    display: block;
+
+    margin-left: auto;
+    margin-right: auto;
+
+}
 }
