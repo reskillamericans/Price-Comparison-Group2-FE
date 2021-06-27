@@ -32,6 +32,7 @@
 --buttonmargin:10px;
 --fieldpadding:1rem;
 --fieldwidth:650px;
+--mobilefieldwidth:350px;
 --textwidth: 220px;
 --buttonwidth: 300px;
 --largespacing: 80px;
@@ -308,6 +309,12 @@ padding:1rem;
     color: var(--redcolor) ;
 }
 
+.fieldsummarytext{
+   visibility: visible;
+}
+.mobilefieldsummarytext{
+   visibility: hidden;
+}
 
 .contactfields{
 grid-area: d;
@@ -516,7 +523,14 @@ header {
 	display: none;
 }
     
+.fieldsummarytext{
+   visibility: hidden;
+}
+.mobilefieldsummarytext{
+    visibility: visible;
 
+    font-size: var(--mobileheadercopy);
+}
 
 .contactlinks{
 margin-left: auto;
@@ -568,14 +582,168 @@ h2{
 font-family: var(--font);
 padding-top: var(--copypadding);
 padding-bottom: var(--copypadding);
-margin-left: auto;
+margin-left: 20px;
 margin-right: auto;
 font-weight: 400;
 font-size: var(--mobilefieldsummary);
 text-align: center;
-width: 250px;
+width: 200px;
 }
 
+p{
+    font-size: var(--mobilebodycopy);
+}
+.contactfields{
+grid-area: d;
+width: 650px;
+
+
+display: block;
+text-align: left;
+border-radius: 10px;
+font-weight: 700;
+}
+
+
+.subject{
+
+margin-bottom: 1rem;
+padding: var(--fieldpadding);
+
+border-radius: var(--corners);
+border: 0.5px solid var(--cyancolor);
+width: var(--mobilefieldwidth);
+
+}
+.subject:hover, .uemail:hover, .message:hover{
+    border: 0.5px solid var(--hovercolor);
+}
+.subject:focus, .uemail:hover, .message:hover{
+    outline: none;
+}
+
+.uemail{
+
+margin-bottom: 1rem;
+padding: var(--fieldpadding);
+border-radius: var(--corners);
+border: 0.5px solid var(--cyancolor);
+width: var(--mobilefieldwidth);
+    }
+
+
+.message{
+    
+padding: var(--fieldpadding);
+border-radius: var(--halfcorners);
+height:200px;
+border: 0.5px solid var(--cyancolor);
+width: var(--mobilefieldwidth);
+max-width: var(--mobilefieldwidth);
+margin-bottom: 1rem;
+
+}
+
+
+.contactbutton{
+padding: var(--buttonpadding);
+margin-top:var(--buttonmargin);
+
+border-radius: var(--halfcorners);
+border: 0.5px solid var(--cyancolor);
+background-color: var(--cyancolor);
+color: var(--whitecolor);
+width: var(--buttonwidth);
+height: var(--buttonheight);
+display: block;
+
+}
+
+
+.scale{
+    padding-top: var(--largespacing);
+    font-weight: 400;
+    clear: both;
+    color: var(--greycolor);
+    text-align: left;
+    width: 400px;
+}
+
+.helloside{
+display: none;
+
+}
+
+
+.bthbutton{
+display: none;
+}
+
+
+.container-4 {
+margin-left: 4rem;
+
+margin-bottom: var(--smallmargin);
+
+margin-right: 12rem;
+
+display: block;
+}
+
+
+h3 {
+	font-size: var(--externallinks);
+}
+.social {
+	padding: 5px;
+}
+
+
+.quick-links{
+    padding-right: 20px;
+    min-width: var(--textwidth);
+    text-align: left;
+}
+
+.secondlinks{
+        color: var(--cyancolor);
+}
+.secondlinks:hover {
+    background-color: var(--hovercolor);
+    color: var(--whitecolor);
+}
+
+.stores{
+    text-align: left;
+    padding-right: 20px;
+  
+}
+
+.follow{
+    text-align: left;
+    min-width:500px;
+}
+
+
+.amazon{
+  height: 40px;
+}
+
+.disclaimer{
+    padding-top: var(--largespacing);
+    text-align: left;
+    color: var(--greycolor);
+    margin-left: 4rem;
+    width: 400px;
+
+
+}
+
+footer {
+	width: 100px;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+}
 
 
 }
