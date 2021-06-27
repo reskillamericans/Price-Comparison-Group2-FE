@@ -67,7 +67,9 @@ body{
 }*/
 
 @media only screen and (max-width: 1440px) {
-
+a:hover{
+    color: var(--whitecolor);
+}
 /*
 header {
 	display: flex;
@@ -176,12 +178,18 @@ header {
 	display: flex;
 	justify-content: space-evenly;
 	margin: 0 auto;
-	background-color: #fcfcfc;
+	background-color: var(--whitecolor);
 	color: #b8b4b4;
 	width: 70%;
 	padding: 15px;
 }
 
+.mobile-menu{
+    display: none;
+}
+.mobile-navbar{
+    display: none;
+}
 .navbar {
 	display: flex;
 	padding: 10px;
@@ -196,8 +204,8 @@ header {
 	cursor: pointer;
 }
 .home:hover {
-	background-color: #065c53;
-	color: #fcfcfc;
+	background-color: var(--hovercolor);
+	color: var(--whitecolor);
 }
 
 .about-us {
@@ -206,8 +214,8 @@ header {
 	cursor: pointer;
 }
 .about-us:hover {
-	background-color: #065c53;
-	color: #fcfcfc;
+	background-color: var(--hovercolor);
+	color: var(--whitecolor);
 }
 .faq {
 	padding-left: 20px;
@@ -215,8 +223,8 @@ header {
 	cursor: pointer;
 }
 .faq:hover {
-	background-color: #065c53;
-	color: #fcfcfc;
+	background-color: var(--hovercolor);
+	color: var(--whitecolor);
 }
 .blog {
 	padding-left: 20px;
@@ -224,8 +232,8 @@ header {
 	cursor: pointer;
 }
 .blog:hover {
-	background-color: #065c53;
-	color: #fcfcfc;
+	background-color: var(--hovercolor);
+	color: var(--whitecolor);
 }
 .contact-us {
 	padding-left: 20px;
@@ -233,8 +241,8 @@ header {
 	cursor: pointer;
 }
 .contact-us:hover {
-	background-color: #065c53;
-	color: #fcfcfc;
+	background-color: var(--hovercolor);
+	color: var(--whitecolor);
 }
 
 .logo {
@@ -244,8 +252,8 @@ header {
 	cursor: pointer;
 }
 .logo:hover {
-	background-color: #065c53;
-	color: #fcfcfc;
+	background-color: var(--hovercolor);
+	color: var(--whitecolor);
 }
 
 .register-login {
@@ -261,8 +269,8 @@ header {
 	padding-left: 5px;
 }
 .register:hover {
-	background-color: #065c53;
-	color: #fcfcfc;
+	background-color: var(--hovercolor);
+	color: var(--whitecolor);
 }
 .login {
 	padding-left: 20px;
@@ -270,8 +278,8 @@ header {
 	cursor: pointer;
 }
 .login:hover {
-	background-color: #065c53;
-	color: #fcfcfc;
+	background-color: var(--hovercolor);
+	color: var(--whitecolor);
 }
 
 .banner{
@@ -280,7 +288,6 @@ header {
         width: 100%;
     }
 .headerimg{
-
     position: relative;
 
 }
@@ -568,7 +575,9 @@ h3 {
 }
 
 a:link{
+    color: var(--cyancolor);
     text-decoration: none;
+
 }
 .cstores{
     padding-right: 20px;
@@ -583,7 +592,7 @@ a:link{
     padding-left: 60px;
     min-width:500px;
     grid-area: h;
-      text-align: center;
+    text-align: center;
 }
 
 
@@ -626,11 +635,106 @@ display: none;
 
 @media only screen and (max-width: 600px) {
 
+.logo {
+	position:absolute;
+	width: 200px;
+
+}
+
 
 header {
-	display: none;
+	display: flex;
+	justify-content: space-evenly;
+	margin: 0 auto;
+	background-color: var(--whitecolor);
+	color: #b8b4b4;
+	width: 70%;
+	padding: 15px;
 }
-    
+
+a:link{
+    text-decoration: none;
+    color: var(--cyancolor);
+}
+.mobile-menu{
+    display: block;
+    position: absolute;
+    left:20px;
+    top:20px;
+
+}
+.menu-icon{
+    width: 40px;
+}
+
+.mobile-navbar{
+  padding-top: 80px;
+  margin-bottom: 0px;
+ display:flex;
+    color: var(--cyancolor);
+	width: 600px;
+
+	font-weight: bolder;
+}
+.navbar {
+    display: none;
+}
+.register-login{
+    display:none;
+}
+.popular {
+	padding-left: 10px;
+	padding-right: 10px;
+
+}
+.popular:hover {
+	background-color: var(--hovercolor);
+	color: var(--whitecolor);
+}
+
+.perfumes {
+	padding-left: 10px;
+	padding-right: 10px;
+
+}
+.perfumes:hover {
+	background-color: var(--hovercolor);
+	color: var(--whitecolor);
+}
+.galaxy {
+	padding-left: 10px;
+	padding-right: 10px;
+
+}
+.galaxy:hover {
+	background-color: var(--hovercolor);
+	color: var(--whitecolor);
+}
+
+.notification{
+width: 30px;
+right: 140px;
+top: 80px;
+position:absolute;
+
+}
+.iphone {
+	padding-left: 20px;
+	padding-right: 20px;
+    color: var(--cyancolor);
+}
+.iphone:hover {
+	background-color: var(--hovercolor);
+	color: var(--whitecolor);
+}
+
+  .banner{
+        margin-top:10px;
+        text-align: center;
+        width: 100%;
+    }  
+
+
 .fieldsummarytext{
    visibility: hidden;
 }
