@@ -378,7 +378,6 @@ color: var(--whitecolor);
 width: var(--buttonwidth);
 height: var(--buttonheight);
 float: right;
-
 }
 
 .contactbutton:hover{
@@ -546,21 +545,18 @@ display:list-item;
 
 .mail{
     min-width: var(--textwidth);
-    grid-area: a;
     text-align: center;
     margin-bottom: 2rem;
 }
 
 .call{
     min-width: var(--textwidth);
-    grid-area: b;
     text-align: center;
     margin-bottom: 2rem;
 }
 
 .address{
     min-width: var(--textwidth);
-    grid-area: c;
     text-align: center;
     margin-bottom: 2rem;
 }
@@ -594,7 +590,7 @@ p{
     font-size: var(--mobilebodycopy);
 }
 .contactfields{
-grid-area: d;
+
 width: 650px;
 
 
@@ -655,7 +651,7 @@ background-color: var(--cyancolor);
 color: var(--whitecolor);
 width: var(--buttonwidth);
 height: var(--buttonheight);
-display: block;
+float:inherit;
 
 }
 
@@ -663,10 +659,10 @@ display: block;
 .scale{
     padding-top: var(--largespacing);
     font-weight: 400;
-    clear: both;
     color: var(--greycolor);
     text-align: left;
     width: 400px;
+
 }
 
 .helloside{
@@ -702,6 +698,7 @@ h3 {
 .quick-links{
     padding-right: 20px;
     min-width: var(--textwidth);
+    margin-bottom: 2rem;
     text-align: left;
 }
 
@@ -716,10 +713,11 @@ h3 {
 .stores{
     text-align: left;
     padding-right: 20px;
-  
+      margin-bottom: 2rem;
 }
 
 .follow{
+    padding-left:unset;
     text-align: left;
     min-width:500px;
 }
