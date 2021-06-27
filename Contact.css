@@ -36,11 +36,7 @@
 --copypadding:10px;
 --lowerpadding:10px;
 
-
-
 --containerwidth: 800px;
-
-
 
 
 
@@ -53,7 +49,8 @@ body{
 	overflow-x: hidden;
 }
 
-
+/* Justin's code accounting for the commented sections below*/
+/*
 .logo {
 	display: flex;
 	width: 500px;
@@ -62,11 +59,11 @@ body{
 }
 .logo:hover {
 	cursor: pointer;
-}
+}*/
 
 @media only screen and (max-width: 1440px) {
 
-
+/*
 header {
 	display: flex;
 	justify-content: space-evenly;
@@ -78,7 +75,7 @@ header {
 
 
 
-/*nav {
+nav {
 	display: none;
 
 }
@@ -503,4 +500,12 @@ footer {
     padding-top: 6rem;
     padding-bottom: 2rem;
 }
+}
+
+
+@media only screen and (max-width: 600px) {
+
+
+
+    
 }
