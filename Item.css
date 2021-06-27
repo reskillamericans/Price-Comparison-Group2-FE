@@ -18,9 +18,10 @@
   width: 20vw;
 }
 .icons {
+  /* width: 30%; */
   display: flex;
   flex-direction: row;
-  column-gap: 100px;
+  column-gap: 10px;
   justify-content: center;
   align-content: center;
 }
@@ -33,4 +34,9 @@
 i {
   color: var(--pri-c);
   text-align: center;
+}
+@media all and (max-width: 1102px) {
+}
+
+@media all and (max-width: 375px) {
 }
