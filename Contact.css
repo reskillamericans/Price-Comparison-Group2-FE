@@ -176,6 +176,7 @@ nav {
 .banner{
         margin-top: var(--headermargin);
         text-align: center;
+        width: 100%;
     }
 .headerimg{
 
@@ -210,9 +211,6 @@ nav {
     "d e";
 }
 
-.banner{
-    width: 100%;
-}
 .contactheader{
     position: absolute;
     top: 55%;
