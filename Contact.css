@@ -14,9 +14,12 @@
 --hovercolor:#065c53;
 --redcolor: rgb(202, 25, 25);
 --headercopy: 37px;
+--mobileheadercopy: 19px;
 --fieldsummary:28px;
+--mobilefieldsummary:14px;
 --externallinks:21px;
 --bodycopy: 16px;
+--mobilebodycopy:14px;
 --copymargin:2rem;
 --font: "Inter", sans-serif;
 --largemargin: 10rem;
@@ -45,6 +48,7 @@
 body{
     font-family: var(--font);
     background-color: var(--whitecolor);
+    font-size: var(--bodycopy);
 	overflow-y: scroll;
 	overflow-x: hidden;
 }
@@ -219,6 +223,7 @@ nav {
 h1{
 
 font-family: var(--font);
+font-size: var(--headercopy);
 
 }
 
@@ -503,9 +508,74 @@ footer {
 }
 
 
+
 @media only screen and (max-width: 600px) {
 
 
-
+header {
+	display: none;
+}
     
+
+
+.contactlinks{
+margin-left: auto;
+margin-right: auto;
+margin-top: var(--smallmargin);
+
+display:list-item;
+
+
+
+}
+
+
+.mail{
+    min-width: var(--textwidth);
+    grid-area: a;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.call{
+    min-width: var(--textwidth);
+    grid-area: b;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.address{
+    min-width: var(--textwidth);
+    grid-area: c;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+h1{
+
+font-size: var(--mobileheadercopy);
+
+}
+
+.getintouchheader{
+margin-top: var(--containermargin);
+margin-bottom: var(--copymargin);
+}
+
+
+h2{
+font-family: var(--font);
+padding-top: var(--copypadding);
+padding-bottom: var(--copypadding);
+margin-left: auto;
+margin-right: auto;
+font-weight: 400;
+font-size: var(--mobilefieldsummary);
+text-align: center;
+width: 250px;
+}
+
+
+
 }
