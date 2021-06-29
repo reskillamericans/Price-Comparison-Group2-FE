@@ -181,6 +181,7 @@ header {
 	background-color: var(--whitecolor);
 	width: 70%;
 	padding: 15px;
+    
 }
 
 .mobile-menu{
@@ -574,7 +575,7 @@ h3 {
     color: var(--whitecolor);
 }
 
-a:link{
+a {
     color: var(--cyancolor);
     text-decoration: none;
 
