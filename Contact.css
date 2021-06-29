@@ -571,11 +571,14 @@ h3 {
 }
 
 .secondlinks{
-        color: var(--cyancolor);
+
+    color: var(--cyancolor);
 }
 .secondlinks:hover {
     background-color: var(--hovercolor);
     color: var(--whitecolor);
+    border-radius: var(--halfcorners);
+    padding: 5px;
 }
 
 a {
