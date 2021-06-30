@@ -12,6 +12,7 @@
 --whitecolor: #fcfcfc;
 --cyancolor: #089285;
 --hovercolor:#065c53;
+--halfcorners: 20px;
 --redcolor: rgb(202, 25, 25);
 --headercopy: 37px;
 --mobileheadercopy: 19px;
@@ -67,9 +68,7 @@ body{
 }*/
 
 @media only screen and (max-width: 1440px) {
-a:hover{
-    color: var(--whitecolor);
-}
+
 /*
 header {
 	display: flex;
@@ -197,54 +196,75 @@ header {
 
 	font-weight: bolder;
 }
-
+a:hover{
+    color: var(--whitecolor);
+}
 .home {
 	margin-left: 150px;
     padding-left: 20px;
 	padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 	cursor: pointer;
 }
 .home:hover {
-	background-color: var(--hovercolor);
-	color: var(--whitecolor);
+    background-color: var(--hovercolor);
+    color: var(--whitecolor);
+    border-radius: var(--halfcorners);
 }
 
 .about-us {
-    
+    padding-top: 5px;
+    padding-bottom: 5px;
 	padding-left: 20px;
 	padding-right: 20px;
 	cursor: pointer;
 }
 .about-us:hover {
-	background-color: var(--hovercolor);
-	color: var(--whitecolor);
+    background-color: var(--hovercolor);
+    color: var(--whitecolor);
+    border-radius: var(--halfcorners);
+
+
 }
 .faq {
+    padding-top: 5px;
+    padding-bottom: 5px;
 	padding-left: 20px;
 	padding-right: 20px;
 	cursor: pointer;
 }
 .faq:hover {
-	background-color: var(--hovercolor);
-	color: var(--whitecolor);
+    background-color: var(--hovercolor);
+    color: var(--whitecolor);
+    border-radius: var(--halfcorners);
+
 }
 .blog {
+    padding-top: 5px;
+    padding-bottom: 5px;
 	padding-left: 20px;
 	padding-right: 20px;
 	cursor: pointer;
 }
 .blog:hover {
-	background-color: var(--hovercolor);
-	color: var(--whitecolor);
+    background-color: var(--hovercolor);
+    color: var(--whitecolor);
+    border-radius: var(--halfcorners);
+
 }
 .contact-us {
 	padding-left: 20px;
 	padding-right: 20px;
 	cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 .contact-us:hover {
-	background-color: var(--hovercolor);
-	color: var(--whitecolor);
+    background-color: var(--hovercolor);
+    color: var(--whitecolor);
+    border-radius: var(--halfcorners);
+
 }
 
 .logo {
@@ -256,8 +276,8 @@ header {
 	cursor: pointer;
 }
 .logo:hover {
-	background-color: var(--hovercolor);
-	color: var(--whitecolor);
+
+	cursor: pointer;
 }
 
 .register-login {
@@ -268,22 +288,30 @@ header {
 	font-weight: bolder;
 }
 .register {
+	padding-left: 20px;
+	padding-right: 20px;
 	cursor: pointer;
-	padding-right: 5px;
-	padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 .register:hover {
-	background-color: var(--hovercolor);
-	color: var(--whitecolor);
+    background-color: var(--hovercolor);
+    color: var(--whitecolor);
+    border-radius: var(--halfcorners);
+
 }
 .login {
 	padding-left: 20px;
 	padding-right: 20px;
 	cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 .login:hover {
-	background-color: var(--hovercolor);
-	color: var(--whitecolor);
+     background-color: var(--hovercolor);
+    color: var(--whitecolor);
+    border-radius: var(--halfcorners);
+
 }
 
 .banner{
@@ -578,7 +606,10 @@ h3 {
     background-color: var(--hovercolor);
     color: var(--whitecolor);
     border-radius: var(--halfcorners);
-    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 a {
@@ -923,6 +954,8 @@ h3 {
 
 .secondlinks{
         color: var(--cyancolor);
+        padding-left:20px;
+        padding-right:20px;
 }
 .secondlinks:hover {
     background-color: var(--hovercolor);
