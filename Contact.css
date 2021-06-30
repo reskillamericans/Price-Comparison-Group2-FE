@@ -703,6 +703,7 @@ a:link{
 }
 .menu-icon{
     width: 40px;
+
 }
 
 .mobile-navbar{
@@ -721,50 +722,59 @@ a:link{
     display:none;
 }
 .popular {
-	padding-left: 10px;
-	padding-right: 10px;
+    padding-left: 20px;
+	padding-right: 20px;
+    padding-top: 5px;
 
 }
 .popular:hover {
 	background-color: var(--hovercolor);
 	color: var(--whitecolor);
+    border-radius: var(--halfcorners);
 }
 
 .perfumes {
-	padding-left: 10px;
-	padding-right: 10px;
+    padding-left: 20px;
+	padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 
 }
 .perfumes:hover {
 	background-color: var(--hovercolor);
 	color: var(--whitecolor);
+    border-radius: var(--halfcorners);
 }
 .galaxy {
-	padding-left: 10px;
-	padding-right: 10px;
-
+    padding-left: 20px;
+	padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 .galaxy:hover {
 	background-color: var(--hovercolor);
 	color: var(--whitecolor);
+    border-radius: var(--halfcorners);
 }
 
 .notification{
 width: 30px;
-float: right;
-bottom: 40px;
-left:10px;
-position:relative;
+top: 80px;
+right:130px;
+position:absolute;
 
 }
 .iphone {
-	padding-left: 20px;
+    padding-left: 20px;
 	padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     color: var(--cyancolor);
 }
 .iphone:hover {
 	background-color: var(--hovercolor);
 	color: var(--whitecolor);
+    border-radius: var(--halfcorners);
 }
 
   .banner{
