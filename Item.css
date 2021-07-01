@@ -25,6 +25,7 @@
   grid-row: 1 / 2;
 }
 .box img {
+  padding-top: 20px;
   width: 80%;
 }
 .icons {
