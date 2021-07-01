@@ -90,6 +90,7 @@ h1 {
     margin-top: 2em;
     margin-bottom: 0%;
     padding-left: .43em;
+    cursor: default;
 }
 
 h2 {
@@ -98,6 +99,7 @@ h2 {
     font-weight: normal;
     margin-top: 0%;
     padding-left: .7em;
+    cursor: default;
 }
 
 p {
@@ -106,6 +108,7 @@ p {
     line-height: 1.250em;
     text-align: justify;
     padding: 1em;
+    cursor: default;
 
 }
 
@@ -114,6 +117,7 @@ p {
     justify-content: center;
     align-items: center;
     margin-top: 1em;
+    cursor: default;
 }
 .left li {
     color: black;
@@ -133,19 +137,19 @@ li.bold {
 
 .amazon{
     position: relative;
-    right: 17px;
+    right: 1.063em;
 }
 .price-a {
     position: relative;
-    right: 16px;
+    right: 1em;
 }
 .ebay {
     position: relative;
-    left: 25px;
+    left: 1.563em;
 }
 .price-e {
     position: relative;
-    left: 16px;
+    left: 1em;
 }
 
 button {
@@ -166,7 +170,7 @@ button:hover {
 	background-color:#065c53;
 }
 .btn1{
-    margin-top: 1em;
+   margin-top: 1em;
    position: relative;
    right: 1em;
 }
@@ -181,12 +185,11 @@ button:hover {
 .icons {
     display: flex;
     justify-content: center;
-  
-    padding-top: 20px;
+    padding-top: 1.250em;
 }
 .like-icon {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 2.500em;
+    padding-right: 2.500em;
 }
 .like-icon:hover {
     cursor: pointer;
@@ -196,8 +199,8 @@ button:hover {
     cursor: pointer;
 }
 .share-icon {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 2.500em;
+    padding-right: 2.500em;
 }
 .share-icon:hover {
     cursor: pointer;
@@ -205,32 +208,33 @@ button:hover {
 .icons-text {
     display: flex;
     justify-content: center;
-    padding: 5px;
+    padding: 0.313em;
     color: #f34213;
-    font-size: 12px;
-    margin-bottom: em;
+    font-size: 0.750em;
+    margin-bottom: 0.313em;
+    cursor: default;
 }
 .like {
     position: relative;
-    right: 10px;
-    padding: 5px;
+    right: 13px;
+    padding: 0.313em;
 }
 .comment {
     position: relative;
-    left: 2px;
-    padding: 5px;
+    left: 0.125em;
+    padding: 0.313em;
 }
 .share {
     position: relative;
-    left: 13px;
-    padding: 5px;
+    left: 15px;
+    padding: 0.313em;
     
 }
 
 
 /*DESKTOP VIEW*/
 
-@media screen and (min-width: 500px) {
+@media (min-width: 500px) {
 
 body {
     overflow-y: hidden;
@@ -255,12 +259,12 @@ header {
 
 .navbar {
    position: relative;
-   left: 17em;
+   left: 7em;
    margin-top: 1.5em;
 }
 .register-login {
     position: relative;
-    left: 25em;
+    left: 16em;
     margin-top: 1.5em;
 }
 
@@ -274,7 +278,7 @@ header li {
 }
 
 header a {
-    padding: 1em;
+    padding: 2em;
     font-size: 1em;
     font-weight: 500;
     text-decoration: none;
@@ -304,10 +308,11 @@ header a {
 }
 
 h1 {
-    font-size: 37px;
+    font-size: 2.313em;
+    margin-top: 1em;
 }
 h2{
-    font-size: 28px;
+    font-size: 1.750em;
 }
 
 .container {
@@ -323,10 +328,33 @@ p {
     width: 40em;
 }
 
+button {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 1em;
+}
+
 .prices {
     position: relative;
     bottom: 20em;
     left: 11em ;
+}
+
+.amazon{
+    position: relative;
+    right: .5em;
+}
+.price-a {
+    position: relative;
+    right: .5em;
+}
+.ebay {
+    position: relative;
+    left: 2.3em;
+}
+.price-e {
+    position: relative;
+    left: 1.8em;
 }
 
 .main img {
@@ -338,6 +366,9 @@ p {
 .social-icons {
     position: relative;
     right: 20.4em;
-    bottom: 16em;
+    bottom: 17em;
+}
+.icons-text {
+    margin-bottom: 0.313em;
 }
 }
