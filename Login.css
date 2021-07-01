@@ -24,18 +24,20 @@ body {
 .box {
   max-width: 100%;
   height: auto;  
-  background-color: #fcfcfc98;
   position: absolute;
   left: 50%;
-  top: 70%;
+  top: 65%;
   transform: translate(-50%, -50%);
   
   
 }
 
 .makeup img {
+  display: block;
   max-width: 100%;
+  width: 15.000em;
   height: auto;
+  object-fit: cover;
   margin-top: 0%;
   position: absolute;
   top: 0;
@@ -46,11 +48,14 @@ h1 {
     color: #089285;
     font-size: 1.188em;
     margin-top: .5em;
+    cursor: default;
 }
 
 h2 {
     color: #089285;
     font-size: 1em;
+    margin-bottom: 1em;
+    cursor: default;
 }
 
 a {
@@ -61,8 +66,8 @@ a {
 
 
 input  {
-      height: 2.500em;
-      width: 20.5em;
+      height: 3.8em;
+      width: 20em;
       top: 0.625em;
       border-top-style: hidden;
       border-right-style: hidden;
@@ -81,10 +86,12 @@ input  {
 #email {
     outline: none;
     margin-top: 1em;
+    margin-bottom: .5em;
 }
   
 #pass {
     outline: none;
+    margin-bottom: 0%;
 }
 
 .pass-forgot {
@@ -94,6 +101,14 @@ input  {
 @media screen and (max-width: 290px) {
     .pass-forgot {
         margin-left: 0;
+}
+
+}
+
+@media screen and (max-width: 350px) {
+
+.box {
+    background-color: #fcfcfc98;
 }
 }
 
@@ -105,8 +120,8 @@ button {
     text-align: center;
     border-radius: 2em;
     cursor: pointer;
-    font-size: 0.875empx;
-    padding: 0.313em;
+    font-size: 0.875em;
+    padding: 0.4em;
     display: block;
     width: 100%;
 }
@@ -115,12 +130,13 @@ button:hover {
 }
 
 .button.login {
-    margin-top: 5em;
+    margin-top: 4.5em;
 }
 
 .bottom {
     justify-content: space-between;
     margin-bottom: 3em;
+    margin-top: .3em;
 }
 
 .account {
@@ -128,13 +144,16 @@ button:hover {
 }
 
 .register {
-    margin-left: 7em;
+    margin-left: 6.4em;
 }
 
 
 /*for desktop view*/
 
-@media (min-width: 960px) {
+@media (min-width: 728px) {
+    .body {
+        overflow: hidden;
+    }
     
     .container {
         display: flex;
@@ -152,12 +171,14 @@ button:hover {
     }
       
     .makeup img {
+        display: block;
         max-width: 100%;
+        width: 20.000em;
         height: auto;
+        object-fit: cover;
         position: absolute;
         top: 0;
         right: 0;
-        z-index:999;
         float: right;
          
     }
@@ -172,10 +193,30 @@ button:hover {
     button {
         font-size: 1em;
         font-weight: 500;
+        padding: 0.6em;
+        width: 22em;
     }
+
+    .register {
+        margin-left: 8em;
+    }
+    
 
     input {
         font-size: 1em;
+        height: 3em;
+        width: 20.5em;
+    }
+
+    #email {
+        outline: none;
+        margin-top: 3em;
+        margin-bottom: 2em;
+    }
+      
+    #pass {
+        outline: none;
+        margin-bottom: .3em;
     }
 
     a {
