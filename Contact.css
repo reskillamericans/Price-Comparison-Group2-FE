@@ -12,6 +12,7 @@
 --whitecolor: #fcfcfc;
 --cyancolor: #089285;
 --hovercolor:#065c53;
+--halfcorners: 20px;
 --redcolor: rgb(202, 25, 25);
 --headercopy: 37px;
 --mobileheadercopy: 19px;
@@ -67,9 +68,7 @@ body{
 }*/
 
 @media only screen and (max-width: 1440px) {
-a:hover{
-    color: var(--whitecolor);
-}
+
 /*
 header {
 	display: flex;
@@ -181,6 +180,7 @@ header {
 	background-color: var(--whitecolor);
 	width: 70%;
 	padding: 15px;
+    
 }
 
 .mobile-menu{
@@ -192,68 +192,92 @@ header {
 .navbar {
 	display: flex;
 	padding: 10px;
-	width: 600px;
+	width: 800px;
 
 	font-weight: bolder;
 }
-
+a:hover{
+    color: var(--whitecolor);
+}
 .home {
-	padding-left: 20px;
+	margin-left: 150px;
+    padding-left: 20px;
 	padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 	cursor: pointer;
 }
 .home:hover {
-	background-color: var(--hovercolor);
-	color: var(--whitecolor);
+    background-color: var(--hovercolor);
+    color: var(--whitecolor);
+    border-radius: var(--halfcorners);
 }
 
 .about-us {
-    
+    padding-top: 5px;
+    padding-bottom: 5px;
 	padding-left: 20px;
 	padding-right: 20px;
 	cursor: pointer;
 }
 .about-us:hover {
-	background-color: var(--hovercolor);
-	color: var(--whitecolor);
+    background-color: var(--hovercolor);
+    color: var(--whitecolor);
+    border-radius: var(--halfcorners);
+
+
 }
 .faq {
+    padding-top: 5px;
+    padding-bottom: 5px;
 	padding-left: 20px;
 	padding-right: 20px;
 	cursor: pointer;
 }
 .faq:hover {
-	background-color: var(--hovercolor);
-	color: var(--whitecolor);
+    background-color: var(--hovercolor);
+    color: var(--whitecolor);
+    border-radius: var(--halfcorners);
+
 }
 .blog {
+    padding-top: 5px;
+    padding-bottom: 5px;
 	padding-left: 20px;
 	padding-right: 20px;
 	cursor: pointer;
 }
 .blog:hover {
-	background-color: var(--hovercolor);
-	color: var(--whitecolor);
+    background-color: var(--hovercolor);
+    color: var(--whitecolor);
+    border-radius: var(--halfcorners);
+
 }
 .contact-us {
 	padding-left: 20px;
 	padding-right: 20px;
 	cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 .contact-us:hover {
-	background-color: var(--hovercolor);
-	color: var(--whitecolor);
+    background-color: var(--hovercolor);
+    color: var(--whitecolor);
+    border-radius: var(--halfcorners);
+
 }
 
 .logo {
 	display: flex;
 	width: 200px;
+    position: absolute;
+    left: 100px;
 
 	cursor: pointer;
 }
 .logo:hover {
-	background-color: var(--hovercolor);
-	color: var(--whitecolor);
+
+	cursor: pointer;
 }
 
 .register-login {
@@ -264,22 +288,30 @@ header {
 	font-weight: bolder;
 }
 .register {
+	padding-left: 20px;
+	padding-right: 20px;
 	cursor: pointer;
-	padding-right: 5px;
-	padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 .register:hover {
-	background-color: var(--hovercolor);
-	color: var(--whitecolor);
+    background-color: var(--hovercolor);
+    color: var(--whitecolor);
+    border-radius: var(--halfcorners);
+
 }
 .login {
 	padding-left: 20px;
 	padding-right: 20px;
 	cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 .login:hover {
-	background-color: var(--hovercolor);
-	color: var(--whitecolor);
+     background-color: var(--hovercolor);
+    color: var(--whitecolor);
+    border-radius: var(--halfcorners);
+
 }
 
 .banner{
@@ -567,14 +599,20 @@ h3 {
 }
 
 .secondlinks{
-        color: var(--cyancolor);
+
+    color: var(--cyancolor);
 }
 .secondlinks:hover {
     background-color: var(--hovercolor);
     color: var(--whitecolor);
+    border-radius: var(--halfcorners);
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
-a:link{
+a {
     color: var(--cyancolor);
     text-decoration: none;
 
@@ -605,7 +643,7 @@ a:link{
     text-align: left;
     color: var(--greycolor);
     margin-left: 4rem;
-    width: 600px;
+    width: 1150px;
 
 }
 .disclaimer-copyright{
@@ -665,12 +703,15 @@ a:link{
 }
 .menu-icon{
     width: 40px;
+
 }
 
 .mobile-navbar{
   padding-top: 80px;
   margin-bottom: 0px;
- display:flex;
+	display: grid;
+   grid-template-columns: repeat(4,1fr);
+
     color: var(--cyancolor);
 	width: 600px;
 
@@ -683,50 +724,61 @@ a:link{
     display:none;
 }
 .popular {
-	padding-left: 10px;
-	padding-right: 10px;
-
+    padding-left: 20px;
+	padding-right: 20px;
+    padding-top: 5px;
+grid-column: 1/2;
 }
 .popular:hover {
 	background-color: var(--hovercolor);
 	color: var(--whitecolor);
+    border-radius: var(--halfcorners);
 }
 
 .perfumes {
-	padding-left: 10px;
-	padding-right: 10px;
-
+    padding-left: 20px;
+	padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+grid-column: 2/3;
 }
 .perfumes:hover {
 	background-color: var(--hovercolor);
 	color: var(--whitecolor);
+    border-radius: var(--halfcorners);
 }
 .galaxy {
-	padding-left: 10px;
-	padding-right: 10px;
-
+    padding-left: 20px;
+	padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    grid-column: 3/4;
 }
 .galaxy:hover {
 	background-color: var(--hovercolor);
 	color: var(--whitecolor);
+    border-radius: var(--halfcorners);
 }
 
 .notification{
 width: 30px;
-float: right;
-bottom: 40px;
-left:10px;
-position:relative;
+top: 80px;
+right:130px;
+position:absolute;
 
 }
 .iphone {
-	padding-left: 20px;
+    padding-left: 20px;
 	padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     color: var(--cyancolor);
+    grid-column: 4/4;
 }
 .iphone:hover {
 	background-color: var(--hovercolor);
 	color: var(--whitecolor);
+    border-radius: var(--halfcorners);
 }
 
   .banner{
@@ -916,10 +968,13 @@ h3 {
 
 .secondlinks{
         color: var(--cyancolor);
+
 }
 .secondlinks:hover {
     background-color: var(--hovercolor);
     color: var(--whitecolor);
+    padding-left:20px;
+    padding-right:20px;
 }
 
 .cstores{
