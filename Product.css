@@ -1,9 +1,7 @@
-
-
-
 * {
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
     
 }
 
@@ -16,7 +14,6 @@ header {
          display: none;
      }
 
-
 nav {
     padding-top:0.625em ;
     display: flex;
@@ -26,6 +23,7 @@ nav {
     
 }
 nav img {
+    position: relative;
     max-width:100%;
     height:auto;
 }
@@ -73,12 +71,12 @@ nav img {
     color: #089285
 }
 
-
 .main {
     align-items: center;
     
 }
 .main img {
+    position: relative;
     max-width:100%;
     height:auto;
 }
@@ -87,7 +85,7 @@ h1 {
     color: #f34213;
     font-size: 1.188em;
     font-weight: normal;
-    margin-top: 2em;
+    margin-top: 1.5em;
     margin-bottom: 0%;
     padding-left: .43em;
     cursor: default;
@@ -106,7 +104,7 @@ p {
     font-size: 0.875em;
     color: black;
     line-height: 1.250em;
-    text-align: justify;
+    text-align: initial;
     padding: 1em;
     cursor: default;
 
@@ -137,19 +135,19 @@ li.bold {
 
 .amazon{
     position: relative;
-    right: 1.063em;
+    left: 1em;
 }
 .price-a {
     position: relative;
-    right: 1em;
+    left: 1em;
 }
 .ebay {
     position: relative;
-    left: 1.563em;
+    left: 3.5em;
 }
 .price-e {
     position: relative;
-    left: 1em;
+    left: 3em;
 }
 
 button {
@@ -180,7 +178,6 @@ button:hover {
     left: 1em;
 
 }
-
 
 .icons {
     display: flex;
@@ -237,6 +234,8 @@ button:hover {
 @media (min-width: 500px) {
 
 body {
+    position: relative;
+    min-height: 100vh;
     overflow-y: hidden;
     overflow-x: hidden;
 }
@@ -247,25 +246,27 @@ display: none;
 
 header {
     display: flex;
+    position: relative;
     background-color: #f9f9f9;
-    height: 4em;
+    height: 6em;
+    text-align: right;
 }
 
 .logo {
     position: relative;
     left: 5em;
-    margin-top: .5em;
+    margin-top: 2.3em;
 }
 
 .navbar {
    position: relative;
-   left: 7em;
-   margin-top: 1.5em;
+   left: 8em;
+   margin-top: 3em;
 }
 .register-login {
     position: relative;
-    left: 16em;
-    margin-top: 1.5em;
+    left: 19em;
+    margin-top: 3em;
 }
 
 .navbar ul {
@@ -308,16 +309,27 @@ header a {
 }
 
 h1 {
-    font-size: 2.313em;
+    font-size: 1.563em;
     margin-top: 1em;
 }
-h2{
-    font-size: 1.750em;
+h2 {
+    font-size: 1.250em;
 }
 
 .container {
+    
+    
     margin-left: 6em;
 }
+
+.perfume {
+    position: relative;
+    right: 5em;   
+}
+.main img {
+    
+}
+
 p {
     display: table;
     position: relative;
@@ -325,7 +337,9 @@ p {
     left: 10em;
     margin:auto;
     font-size: 1em;
+    max-width: 100%;
     width: 40em;
+    text-align: initial;
 }
 
 button {
@@ -338,37 +352,32 @@ button {
     position: relative;
     bottom: 20em;
     left: 11em ;
+    
 }
 
 .amazon{
     position: relative;
-    right: .5em;
+    left: 2em;
 }
 .price-a {
     position: relative;
-    right: .5em;
+    left: 2em;
 }
 .ebay {
     position: relative;
-    left: 2.3em;
+    left: 4.5em;
 }
 .price-e {
     position: relative;
-    left: 1.8em;
-}
-
-.main img {
-    position: relative;
-    right: 5em;
-
+    left: 4em;
 }
 
 .social-icons {
-    position: relative;
-    right: 20.4em;
-    bottom: 17em;
+    position: absolute;
+    left: 12.3em;
+    bottom: 13em;
 }
 .icons-text {
-    margin-bottom: 0.313em;
+    margin-bottom: ;
 }
 }
