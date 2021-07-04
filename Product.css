@@ -84,7 +84,7 @@ nav img {
 h1 {
     color: #f34213;
     font-size: 1.188em;
-    font-weight: normal;
+    font-weight: 500;
     margin-top: 1.5em;
     margin-bottom: 0%;
     padding-left: .43em;
@@ -103,7 +103,7 @@ h2 {
 p {
     font-size: 0.875em;
     color: black;
-    line-height: 1.250em;
+    line-height: 2em;
     text-align: initial;
     padding: 1em;
     cursor: default;
@@ -249,7 +249,7 @@ header {
     align-items: center;
     position: relative;
     background-color: #f9f9f9;
-    height: 4.5em;
+    height: 3.9em;
     text-align: right;
 }
 
@@ -310,12 +310,13 @@ header a {
 }
 
 h1 {
-    font-size: 1.563em;
+    font-size: 32px;
+    font-weight: unset;
     margin-top: 1em;
-    font-weight: 500;
+   
 }
 h2 {
-    font-size: 1.250em;
+    font-size: 27px;
 }
 
 .container {
@@ -328,9 +329,6 @@ h2 {
     position: relative;
     right: 5em;   
 }
-.main img {
-    
-}
 
 p {
     display: table;
@@ -342,6 +340,7 @@ p {
     max-width: 100%;
     width: 40em;
     text-align: initial;
+    line-height: 1.5em;
 }
 
 button {
@@ -367,17 +366,17 @@ button {
 }
 .ebay {
     position: relative;
-    left: 4.5em;
+    left: 4.95em;
 }
 .price-e {
     position: relative;
-    left: 4em;
+    left: 4.4em;
 }
 
 .social-icons {
     position: absolute;
     left: 12.3em;
-    bottom: 12.3em;
+    bottom: 13em;
 }
 .icons-text {
     margin-bottom: ;
