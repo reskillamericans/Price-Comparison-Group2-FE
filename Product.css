@@ -246,27 +246,28 @@ display: none;
 
 header {
     display: flex;
+    align-items: center;
     position: relative;
     background-color: #f9f9f9;
-    height: 6em;
+    height: 4.5em;
     text-align: right;
 }
 
 .logo {
     position: relative;
     left: 5em;
-    margin-top: 2.3em;
+    
 }
 
 .navbar {
    position: relative;
    left: 8em;
-   margin-top: 3em;
+   
 }
 .register-login {
     position: relative;
     left: 19em;
-    margin-top: 3em;
+    
 }
 
 .navbar ul {
@@ -311,6 +312,7 @@ header a {
 h1 {
     font-size: 1.563em;
     margin-top: 1em;
+    font-weight: 500;
 }
 h2 {
     font-size: 1.250em;
@@ -375,7 +377,7 @@ button {
 .social-icons {
     position: absolute;
     left: 12.3em;
-    bottom: 13em;
+    bottom: 12.3em;
 }
 .icons-text {
     margin-bottom: ;
