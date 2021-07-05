@@ -5,109 +5,69 @@
 	overflow: hidden;
 }
 
-header {
-	display: flex;
-	justify-content: space-evenly;
-	margin: 0 auto;
-	background-color: #fcfcfc;
-	color: #b8b4b4;
-	width: 100%;
-	padding: 15px;
-}
-
 nav {
 	display: none;
 }
 
-.navbar {
+header {
 	display: flex;
-	padding: 10px;
-	width: 500px;
-	justify-content: flex-end;
-	font-weight: bolder;
-}
-
-.home {
-	padding-left: 20px;
-	padding-right: 20px;
-	cursor: pointer;
-}
-.home:hover {
-	background-color: #065c53;
-	color: #fcfcfc;
-}
-
-.about-us {
-	padding-left: 20px;
-	padding-right: 20px;
-	cursor: pointer;
-}
-.about-us:hover {
-	background-color: #065c53;
-	color: #fcfcfc;
-}
-.faq {
-	padding-left: 20px;
-	padding-right: 20px;
-	cursor: pointer;
-}
-.faq:hover {
-	background-color: #065c53;
-	color: #fcfcfc;
-}
-.blog {
-	padding-left: 20px;
-	padding-right: 20px;
-	cursor: pointer;
-}
-.blog:hover {
-	background-color: #065c53;
-	color: #fcfcfc;
-}
-.contact-us {
-	padding-left: 20px;
-	padding-right: 20px;
-	cursor: pointer;
-}
-.contact-us:hover {
-	background-color: #065c53;
-	color: #fcfcfc;
+	align-items: center;
+	position: relative;
+	background-color: #f9f9f9;
+	height: 6em;
+	height: 4.5em;
+	text-align: right;
 }
 
 .logo {
-	display: flex;
-	width: 500px;
-	padding-left: 20px;
-	padding-right: 20px;
-}
-.logo:hover {
-	cursor: pointer;
+	position: relative;
+	left: 5em;
 }
 
-.register-login {
-	display: flex;
-	padding: 10px;
-	width: 150px;
-	justify-content: flex-end;
-	font-weight: bolder;
+.navbar {
+	position: relative;
+	left: 50em;
+	font-weight: 900;
 }
-.register {
-	padding-left: 20px;
-	padding-right: 20px;
-	cursor: pointer;
+.register-login {
+	position: relative;
+	left: 60em;
+}
+
+.navbar ul {
+	list-style-type: none;
+}
+header li {
+	float: left;
+	list-style: none;
+}
+header a {
+	padding: 2em;
+	font-size: 1em;
+	font-weight: 500;
+	text-decoration: none;
+	color: #b8b4b4;
+}
+.home:hover {
+	color: #089285;
+}
+.about:hover {
+	color: #089285;
+}
+.faq:hover {
+	color: #089285;
+}
+.blog:hover {
+	color: #089285;
+}
+.contact:hover {
+	color: #089285;
 }
 .register:hover {
-	background-color: #065c53;
-	color: #fcfcfc;
-}
-.login {
-	padding-left: 20px;
-	padding-right: 20px;
-	cursor: pointer;
+	color: #089285;
 }
 .login:hover {
-	background-color: #065c53;
-	color: #fcfcfc;
+	color: #089285;
 }
 
 .container {
