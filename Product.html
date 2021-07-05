@@ -7,26 +7,60 @@
     <link rel="stylesheet" href="Product.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet"> 
-    <title>Document</title>
+    <title>Product</title>
+    <link rel="shortcut icon" href="images/product-images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/product-images/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <div class="container">
-        
-        <div class="topnav">
-                <a href="#home" class="active">Home</a>
-                <a href="#about-us">About Us</a>
-                <a href="#faq">FAQ</a>
-                <a href="#blog">Blog</a>
-                <a href="#contact-us">Contact Us</a>
-                <a href="#register">Register</a>
-                <a href="#login">Login</a>    
+    <div class="wrapper">
+    <header>
+        <div class="logo">
+            <img src="images/product-images/brand&logo.png" alt="scalables-logo">
         </div>
         
-        <div class="main">
+        <div class="navbar">
+            <ul>
+                <li><a href="Modal.html" class="home">Home</a></li>
+                <li><a href="#" class="about">About Us</a></li>
+                <li><a href="faq.html" class="faq">FAQ</a></li>
+                <li><a href="#" class="blog">Blog</a></li>
+                <li><a href="#" class="contact">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="register-login">
+            <ul>
+                <li><a href="Login.html" class="login">Register</a></li>
+                <li><a href="Signup.html" class="register">Login</a></li>
+            </ul>
+        </div>
+        
+    </header>
+
+    <nav>
+        <div class="mobile-icons">
+            <img src="images/product-images/home-icon.svg" alt="home-icon" class="home-icon" id="home-icon-position">
+            <img src="images/product-images/about-us.svg" alt="about-icon" class="about-icon">
+            <img src="images/product-images/faq-icon.svg" alt="faq-icon" class="faq-icon" id="faq-icon-position">
+            <img src="images/product-images/contact-us.svg" alt="contact-icon" class="contact-icon">
+            <img src="images/product-images/log-in.svg" alt="login-icon" class="login-icon" id="login-icon-position">
+        </div>
+        <div class="mobile-text">
+            <div id="home-text" class="home-icon">Home</div>
+            <div id="about-text" class="about-icon">About Us</div>
+            <div id="faq-text" class="faq-icon">FAQ</div>
+            <div id="contact-text" class="contact-icon">Contact Us</div>
+            <div id="login-text" class="login-icon">Log In</div>
+
+        </div>
+    </nav>
+    
+    <div class="container">
+        
+       <div class="main">
             <h1>Tom Ford</h1>
             <h2>Black Orchid Eau de Parfum Spray
-                <br> 1.7 oz</h2>
-            <img src="images/product-images/blackorchid.png" alt="black perfume bottle">
+                 1.7 oz</h2>
+            <div class="perfume"><img src="images/product-images/blackorchid.png" alt="black perfume bottle"></div>
             <p>A luxurious and sensual fragrance of rich, dark accords and an alluring potion of black
                 orchids, and spice, Tom Ford's Black Orchid is both modern and timeless. Bottled in 
                 fluted, black-glass, Black Orchid makes an unforgettable statement of iconic style and
@@ -36,43 +70,39 @@
            <div class="prices">
             <div class="left">
             <ul>
-                <li class="bold">Amazon</li>
-                <li>$108.00</li>
-                <li><a href="#button" class="button">Buy Now</a></li>
-            </ul>
+                <li class="bold amazon">Amazon</li>
+                <li class="price-a">$108.00</li>
+            </ul> 
+            <button class="btn1">Buy Now</button>
             </div>
 
            <div class="right">
             <ul>
-                <li class="bold">Ebay</li>
-                <li>$81.49</li>
-                <li><a href="#button" class="button">Buy Now</a></li>
+                <li class="bold ebay">Ebay</li>
+                <li class="price-e">$81.49</li>
             </ul>
+                <button class="btn2">Buy Now</button>
             </div>
             </div>
 
         </div>
+    
 
-        <div class="footer">
+        <div class="social-icons">
             <div class="icons">
-            <ul>
-                <li><img src="images/product-images/thumbs-up.svg"></li>
-                <li><img src="images/product-images/message-square.svg"></li>
-                <li><img src="images/product-images/share.svg"></li>
-            </ul>
+                <img src="images/product-images/like-icon.svg" alt="thumbs-up-icon" class="like-icon">
+                <img src="images/product-images/comment-icon.svg" alt="message-square-icon" class="comment-icon">
+                <img src="images/product-images/share-icon.svg" alt="share-icon" class="share-icon">
             </div>
-        
-            <div class="words">
-            <ul>
-                <li>Like</li>
-                <li>Comment</li>
-                <li>Share</li>
-            </ul>
+            <div class="icons-text">
+                <div class="like">Like</div>
+                <div class="comment">Comment</div>
+                <div class="share">Share</div>
             </div>
 
         </div>
 
-        
+        </div>
     </div>
 </body>
 </html>
