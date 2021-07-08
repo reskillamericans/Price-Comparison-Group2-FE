@@ -1,0 +1,255 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Inter", sans-serif;
+	overflow: hidden;
+}
+
+header {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 0 auto;
+	background-color: #fcfcfc;
+	color: #b8b4b4;
+	width: 100%;
+	padding: 15px;
+}
+
+nav {
+	display: none;
+}
+
+.navbar {
+	display: flex;
+	padding: 10px;
+	width: 500px;
+	justify-content: flex-end;
+	font-weight: bolder;
+}
+
+.home {
+	padding-left: 20px;
+	padding-right: 20px;
+	cursor: pointer;
+}
+.home:hover {
+	background-color: #065c53;
+	color: #fcfcfc;
+}
+
+.about-us {
+	padding-left: 20px;
+	padding-right: 20px;
+	cursor: pointer;
+}
+.about-us:hover {
+	background-color: #065c53;
+	color: #fcfcfc;
+}
+.faq {
+	padding-left: 20px;
+	padding-right: 20px;
+	cursor: pointer;
+}
+.faq:hover {
+	background-color: #065c53;
+	color: #fcfcfc;
+}
+.blog {
+	padding-left: 20px;
+	padding-right: 20px;
+	cursor: pointer;
+}
+.blog:hover {
+	background-color: #065c53;
+	color: #fcfcfc;
+}
+.contact-us {
+	padding-left: 20px;
+	padding-right: 20px;
+	cursor: pointer;
+}
+.contact-us:hover {
+	background-color: #065c53;
+	color: #fcfcfc;
+}
+
+.logo {
+	display: flex;
+	width: 500px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.logo:hover {
+	cursor: pointer;
+}
+
+.register-login {
+	display: flex;
+	padding: 10px;
+	width: 150px;
+	justify-content: flex-end;
+	font-weight: bolder;
+}
+.register {
+	padding-left: 20px;
+	padding-right: 20px;
+	cursor: pointer;
+}
+.register:hover {
+	background-color: #065c53;
+	color: #fcfcfc;
+}
+.login {
+	padding-left: 20px;
+	padding-right: 20px;
+	cursor: pointer;
+}
+.login:hover {
+	background-color: #065c53;
+	color: #fcfcfc;
+}
+
+.container {
+	height: 50vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h1 {
+	display: flex;
+	text-align: center;
+	color: #f34213;
+	padding: 20px;
+}
+.btn {
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+}
+button {
+	background-color: #089285;
+	font-weight: bolder;
+	color: #fcfcfc;
+	padding: 10px 80px 10px 80px;
+	border: none;
+	border-radius: 50px;
+}
+button:hover {
+	cursor: pointer;
+	background-color: #fcfcfc;
+	color: #089285;
+}
+.icons {
+	display: flex;
+	justify-content: center;
+
+	padding-top: 20px;
+}
+.thumbsup {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+.thumbsup:hover {
+	cursor: pointer;
+}
+
+.message-square:hover {
+	cursor: pointer;
+}
+.share-icon {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+.share-icon:hover {
+	cursor: pointer;
+}
+.icon-text {
+	display: flex;
+	justify-content: center;
+	padding: 5px;
+	color: #f34213;
+	font-weight: bolder;
+}
+.like {
+	padding: 5px;
+}
+.comment {
+	padding: 5px;
+}
+.share {
+	padding: 5px;
+}
+.image-items {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 10px;
+}
+
+a {
+	text-decoration: none;
+	color: #089285;
+}
+a:hover {
+	color: #fcfcfc;
+}
+#home-btn {
+	color: #fcfcfc;
+}
+#home-btn:hover {
+	color: #089285;
+}
+
+@media all and (max-width: 375px) {
+	header {
+		display: none;
+	}
+
+	h1 {
+		display: flex;
+		text-align: center;
+		color: #f34213;
+		padding: 22px;
+		font-size: 20px;
+	}
+
+	.image-items {
+		display: flex;
+		justify-content: center;
+	}
+
+	.container {
+		height: 70vh;
+	}
+
+	nav {
+		padding-top: 10px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-color: #fcfcfc;
+	}
+	.mobile-icons {
+		display: flex;
+		justify-content: space-evenly;
+		width: 100%;
+	}
+	.mobile-text {
+		display: flex;
+		justify-content: space-evenly;
+		width: 100%;
+		font-size: 14px;
+		color: #b8b4b4;
+		font-weight: bolder;
+	}
+	#home-icon-position {
+		position: relative;
+		right: 10px;
+		color: black;
+	}
+	#login-icon-position {
+		position: relative;
+		left: 10px;
+	}
+}
