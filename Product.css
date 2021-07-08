@@ -39,10 +39,7 @@ nav img {
     max-width:100%;
     height:auto;
 }
-.mobile-logo {
-    width: 65px;
-    margin-bottom: 1em;
-}
+
 .mobile-icons{
     display: flex;
     justify-content: space-evenly;
