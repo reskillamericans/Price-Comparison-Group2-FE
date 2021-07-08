@@ -39,7 +39,10 @@ nav img {
     max-width:100%;
     height:auto;
 }
-
+.mobile-logo {
+    width: 65px;
+    margin-bottom: 1em;
+}
 .mobile-icons{
     display: flex;
     justify-content: space-evenly;
@@ -67,23 +70,52 @@ nav img {
     position: relative;
     right: 0.313em;
 }
+.faq-icon {
+    width: 30px;
+    
+}
+
 
 .home-icon:hover {
-    color: #089285
+    filter: invert(100%) url(#colorFilter);    
 }
 .about-icon:hover {
-    color: #089285
-}
-.faq-icon:hover {
-    color: #089285
-}
-.contact-icon:hover {
-    color: #089285
-}
-.login-icon:hover {
-    color: #089285
+    
+    filter: invert(100%) url(#colorFilter);  
 }
 
+.faq-icon:hover {
+    
+    filter: invert(100%) url(#colorFilter); 
+}
+.contact-icon:hover {
+    
+    filter: invert(100%) url(#colorFilter); 
+}
+.login-icon:hover {
+    
+    filter: invert(100%) url(#colorFilter); 
+}
+
+.home-icon-text:hover {
+    color: #089285
+}
+.about-icon-text:hover {
+    color: #089285;
+}
+
+.faq-icon-text:hover {
+    color: #089285;
+    
+}
+.contact-icon-text:hover {
+    color: #089285;
+    
+}
+.login-icon-text:hover {
+    color: #089285;
+    
+}
 .main {
     align-items: center;
     overflow-x: hidden;
