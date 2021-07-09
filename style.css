@@ -32,7 +32,6 @@ header {
 .navbar {
 	position: relative;
 	left: 30em;
-	font-weight: 900;
 }
 .register-login {
 	position: relative;
@@ -49,10 +48,11 @@ header li {
 header a {
 	padding: 2em;
 	font-size: 1em;
-	font-weight: 500;
+	font-weight: bold;
 	text-decoration: none;
 	color: #b8b4b4;
 }
+
 .home:hover {
 	color: #089285;
 }
@@ -114,6 +114,8 @@ h1 {
 	padding-left: 50px;
 	text-decoration-color: #089285;
 	border-color: #089285;
+	outline-width: 0;
+	outline-color: #089285;
 }
 .search-icon {
 	position: relative;
@@ -125,6 +127,7 @@ h2 {
 	position: relative;
 	left: 8cm;
 	padding-top: 20px;
+	font-size: 30px;
 }
 
 .container-2 {
@@ -287,6 +290,10 @@ h2 {
 	display: flex;
 	justify-content: center;
 	padding-top: 50px;
+	outline-width: 0;
+}
+#email {
+	outline-width: 0;
 }
 .sub-btn {
 	padding: 20px;
@@ -297,6 +304,12 @@ h2 {
 	background-color: #089285;
 	color: #fcfcfc;
 	width: 100px;
+	outline-width: 0;
+}
+.sub-btn:hover {
+	color: #089285;
+	background-color: #fcfcfc;
+	border: #089285 solid 1px;
 }
 #email {
 	width: 400px;
@@ -341,7 +354,8 @@ a {
 }
 
 .social-links a:hover {
-	background-color: black;
+	cursor: pointer;
+	filter: invert(0) sepia(0) hue-rotate(0deg) saturate(1) brightness(0.6);
 }
 
 .mobile_footer {
@@ -485,5 +499,10 @@ a {
 		left: 5px;
 		padding-top: 150px;
 		padding-bottom: 50px;
+	}
+
+	.social-links a:hover {
+		cursor: pointer;
+		filter: invert(0) sepia(0) hue-rotate(0deg) saturate(1) brightness(0.6);
 	}
 }

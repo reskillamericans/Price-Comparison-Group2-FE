@@ -44,7 +44,7 @@ header li {
 header a {
 	padding: 2em;
 	font-size: 1em;
-	font-weight: 500;
+	font-weight: bold;
 	text-decoration: none;
 	color: #b8b4b4;
 }
@@ -88,6 +88,7 @@ h1 {
 	justify-content: center;
 	padding: 20px;
 }
+
 button {
 	background-color: #089285;
 	font-weight: bolder;
@@ -100,6 +101,7 @@ button:hover {
 	cursor: pointer;
 	background-color: #fcfcfc;
 	color: #089285;
+	border: #089285 solid 2px;
 }
 .icons {
 	display: flex;
@@ -153,12 +155,6 @@ a {
 }
 a:hover {
 	color: #fcfcfc;
-}
-#home-btn {
-	color: #fcfcfc;
-}
-#home-btn:hover {
-	color: #089285;
 }
 
 @media all and (max-width: 375px) {
