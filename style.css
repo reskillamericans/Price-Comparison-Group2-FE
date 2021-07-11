@@ -381,16 +381,45 @@ a {
 		padding-bottom: 10px;
 		padding-top: 10px;
 	}
-	.hamberger__and__logo {
+	.topnav {
 		width: 100%;
-	}
-	.hamberger_pic {
+		overflow: hidden;
+
 		position: relative;
-		left: 10px;
 	}
+
+	.topnav #myLinks {
+		display: none;
+	}
+
+	.topnav a {
+		color: #089285;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 17px;
+		display: block;
+	}
+
+	.topnav a.icon {
+		display: block;
+		position: absolute;
+		right: 300px;
+		top: 0;
+	}
+
+	.topnav a:hover {
+		background-color: #ddd;
+		color: #089285;
+	}
+
+	.active {
+		background-color: #04aa6d;
+		color: white;
+	}
+
 	.logo {
 		position: relative;
-		left: 4cm;
+		left: 5cm;
 	}
 
 	.navbar-mobile {
