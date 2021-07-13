@@ -1025,7 +1025,7 @@ h3 {
     padding-top: var(--largespacing);
     text-align: left;
     color: var(--greycolor);
-    margin-left: 2rem;
+    margin-left: 1rem;
     width: 300px;
    display: none;
 }
