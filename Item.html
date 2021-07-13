@@ -76,7 +76,7 @@
         <h3 class="price">$108.00</h3>
        <div class="icons">
           <div class="i-n-text">
-            <i class="far fa-thumbs-up"></i>
+            <i class="far fa-thumbs-up like-icon"></i>
             <p>Like</p>
           </div>
           <div class="i-n-text">
@@ -110,5 +110,18 @@
         </div>
       </div>
     </section>
+    <svg id="svg">
+        <defs>
+          <filter id="colorFilter">
+            <feColorMatrix 
+              color-interpolation-filters="sRGB"
+              type="matrix"
+              values="0 0 0 0 0
+                      0 0.50 0 0 0
+                      0 0 0.50 0 0
+                      0 0 0 1 0 "/>
+          </filter>
+        </defs>
+      </svg>
   </body>
 </html>
