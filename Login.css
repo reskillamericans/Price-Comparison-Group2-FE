@@ -3,15 +3,22 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    list-style-type: none;
-    outline: none;
 }
 
-body {
-    font-family: 'Inter', sans-serif;
-    min-height: 100vh;
-    
-}
+
+
+@media screen and (max-width: 900px) {
+
+    body {
+        font-family: 'Inter', sans-serif;
+        min-height: 100vh;
+        
+    }
+
+    .web-view {
+        display: none;
+    }
+
 
 .container {
   display: flex;
@@ -146,82 +153,215 @@ button:hover {
 .register {
     margin-left: 6.4em;
 }
+}
 
 
 /*for desktop view*/
 
-@media (min-width: 728px) {
-    .body {
-        overflow: hidden;
-    }
+
     
-    .container {
-        display: flex;
-        flex-direction: row;
-        
-    }
+   @media screen and (min-width: 901px) {
 
-    .box {
-        background-color: transparent;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        
-    }
-      
-    .makeup img {
-        display: block;
-        max-width: 100%;
-        width: 20.000em;
-        height: auto;
-        object-fit: cover;
-        position: absolute;
-        top: 0;
-        right: 0;
-        float: right;
-         
-    }
-
-    h1 {
-        font-size: 2.313em;
-    }
-    h2 {
-        font-size: 1.750em;
-    }
-
-    button {
-        font-size: 1em;
-        font-weight: 500;
-        padding: 0.6em;
-        width: 22em;
-    }
-
-    .register {
-        margin-left: 8em;
-    }
+body {
     
+    font-family: 'Inter', sans-serif;
+    overflow:hidden;
+} 
+    
+.mobile-view {
+    display: none;
+}
 
-    input {
-        font-size: 1em;
-        height: 3em;
-        width: 20.5em;
-    }
 
-    #email {
-        outline: none;
-        margin-top: 3em;
-        margin-bottom: 2em;
-    }
-      
-    #pass {
-        outline: none;
-        margin-bottom: .3em;
-    }
+header {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: #f9f9f9;
+    background-size: cover;
+    height: 3.9em;
+    width: 100%;    
+}
 
-    a {
-        font-size: 0.875em;
-    }
+.logo {
+    position: relative;
+    left: 5em;  
+}
 
+.navbar {
+   position: relative;
+   left: 8em;   
+}
+
+.register-login {
+    position: relative;
+    left: 19em;    
+}
+
+.navbar ul {
+    list-style-type: none;
+}
+.register-login ul {
+    list-style-type: none;
+}
+header li {
+    float: left;
+    list-style: none;
+}
+
+header a {
+    padding: 2em;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    color: #b8b4b4;
+}
+
+.home:hover {
+    color: #089285;
+}
+.about:hover {
+    color: #089285;
+}
+.faq:hover {
+    color: #089285;
+}
+.blog:hover {
+    color: #089285;
+}
+.contact:hover {
+    color: #089285;
+}
+.register:hover {
+    color: #089285;
+}
+.login:hover {
+    color: #089285;
+}
+
+
+.bigimage {
+    background-color: #089285;
+    position: absolute;
+    height: 525px;
+    top: 100px;
+    left: 175px;
+    min-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bigimage img {
+    width: 350px;
+    height: auto;
+    object-fit: cover;
+}
+
+.form-container {
+    position: absolute;
+    left: 630px;
+    top: 100px;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+}
+
+h1 {
+color: #180126;
+font-size: 30px;
+}
+
+h2 {
+color: #180126;
+font-size: 17px;
+font-weight: 400;
+margin-bottom: 20px;
+}
+
+h2 a {
+    color: #089285;
+    font-size: 17px;
+    font-weight: 500;
+    text-decoration: none;
+}
+h2 a:hover {
+
+    color: #065c53;
+}
+
+label {
+color: black;
+font-size: 14px;
+font-weight: 400;
+margin-bottom: 10px;
+margin-top: 20px;
+
+}
+
+input {
+    width: 500px;
+    height: 40px;
+    border: 2px solid #949494;
+    border-radius: 5px;
+    text-indent:10px;
+    line-height: normal;
+}
+input:focus {
+    outline: 2px solid #089285;
+}
+
+input[type=checkbox] {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #8D8A9C;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-right: 6px;  
+}
+
+#email-web {
+    
+    margin-bottom: 10px;
+}
+.remember-me {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 23px;
+    
+}
+.remember-me span {
+    font-weight: 500;
+    font-style: bold;
+    padding-left: 16em;
+    cursor: pointer;
+}
+.remember-me a {
+    text-decoration: none;
+    color: #089285;
+}
+
+input[type=submit] {
+    background-color: #089285;
+    color: white;
+    border: none;
+    font-size: 16px;
+    margin-top: 15px;
+    height: 50px;
+}
+input[type=submit]:hover{
+    background-color: #065c53;
+    cursor: pointer;
+}
 
 }
