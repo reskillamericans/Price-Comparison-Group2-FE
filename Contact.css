@@ -399,7 +399,7 @@ width: 450px;
 
 p{
     font-family: var(--font);
-    padding-bottom: var(--copypadding);
+
 }
 
 
@@ -440,7 +440,9 @@ padding:1rem;
       text-align: center;
 }
 
-
+.iform > p{
+        padding-bottom: var(--copypadding);
+}
 
 
 
@@ -642,11 +644,42 @@ a {
     width: 1150px;
 
 }
+/*
 .disclaimer-copyright{
     margin-left: 2rem;
     display: none;
   
+}*/
+
+
+/* Copyright */
+.copyright .copy-content {
+  color: var(--sec-t);
+  display: flex;
+  justify-content: center;
+  column-gap: 5px;
 }
+.copyright p {
+  align-self: center;
+  justify-self: center;
+}
+
+.copyright a {
+  color: var(--sec-t);
+  font-size: var(--wh6);
+  font-weight: normal;
+  border-left: 1px solid var(--sec-t);
+  padding-left: 5px;
+  padding-right: 5px;
+  align-self: center;
+}
+
+
+
+
+
+
+
 
 footer {
 	display:inline-flex;
