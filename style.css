@@ -32,6 +32,7 @@ header {
 .navbar {
 	position: relative;
 	left: 30em;
+	font-weight: 900;
 }
 .register-login {
 	position: relative;
@@ -128,6 +129,9 @@ h2 {
 	left: 8cm;
 	padding-top: 20px;
 	font-size: 30px;
+	position: relative;
+	left: 8cm;
+	padding-top: 20px;
 }
 
 .container-2 {
@@ -310,6 +314,19 @@ h2 {
 	color: #089285;
 	background-color: #fcfcfc;
 	border: #089285 solid 1px;
+	display: flex;
+	justify-content: center;
+	padding-top: 50px;
+}
+.sub-btn {
+	padding: 20px;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	font-size: 10px;
+	border: none;
+	background-color: #089285;
+	color: #fcfcfc;
+	width: 100px;
 }
 #email {
 	width: 400px;
@@ -356,6 +373,8 @@ a {
 .social-links a:hover {
 	cursor: pointer;
 	filter: invert(0) sepia(0) hue-rotate(0deg) saturate(1) brightness(0.6);
+
+	background-color: black;
 }
 
 .mobile_footer {
@@ -507,7 +526,6 @@ a {
 		align-items: center;
 		width: 100%;
 		position: relative;
-
 		height: 70vh;
 	}
 
@@ -533,5 +551,138 @@ a {
 	.social-links a:hover {
 		cursor: pointer;
 		filter: invert(0) sepia(0) hue-rotate(0deg) saturate(1) brightness(0.6);
+	}
+	body {
+		overflow-x: hidden;
+	}
+
+	header {
+		display: none;
+	}
+
+	nav {
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+	.hamberger__and__logo {
+		width: 100%;
+	}
+	.hamberger_pic {
+		position: relative;
+		left: 10px;
+	}
+	.logo {
+		position: relative;
+		left: 4cm;
+	}
+
+	.navbar-mobile {
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	.container_1_mobile {
+		display: flex;
+		width: 100%;
+	}
+
+	.container {
+		display: none;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.background-search {
+		position: relative;
+
+		width: 100%;
+	}
+
+	h2 {
+		display: none;
+	}
+
+	.h2_mobile {
+		display: flex;
+		font-size: 25px;
+		font-weight: 700;
+		padding-top: 20px;
+	}
+
+	.container-2 {
+		display: flex;
+		flex-direction: row;
+		overflow-x: scroll;
+		width: 100%;
+	}
+
+	.container-3 {
+		width: 100%;
+	}
+
+	.sub {
+		width: 100%;
+		height: 60vh;
+	}
+	.sub-text {
+		font-size: 20px;
+		font-weight: 700;
+		text-align: center;
+		padding-top: 150px;
+	}
+	.email-sub {
+		display: flex;
+		justify-content: center;
+		padding-top: 50px;
+	}
+	.sub-btn {
+		padding: 20px;
+		border-top-right-radius: 15px;
+		border-bottom-right-radius: 15px;
+		font-size: 10px;
+		border: none;
+		background-color: #089285;
+		color: #fcfcfc;
+		width: 100px;
+	}
+	#email {
+		width: 300px;
+		padding-left: 25px;
+		padding-right: 25px;
+		border-bottom-left-radius: 15px;
+		border-top-left-radius: 15px;
+		border-color: #089285;
+	}
+
+	.container-4 {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		width: 100%;
+		position: relative;
+
+		height: 70vh;
+	}
+
+	footer {
+		display: none;
+		justify-content: center;
+		width: 50px;
+		position: relative;
+	}
+
+	.mobile_footer {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.mobile_copyright {
+		position: relative;
+		left: 5px;
+		padding-top: 150px;
+		padding-bottom: 50px;
 	}
 }

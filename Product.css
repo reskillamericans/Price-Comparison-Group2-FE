@@ -2,13 +2,25 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    
 }
 
 body {
     color: #fcfcfc;
     font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
 }
+
+@media screen and (max-width: 770px) {
+    body{
+        overflow-x: hidden;
+    }
+    .perfume {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 
 header {
          display: none;
@@ -27,6 +39,7 @@ nav img {
     max-width:100%;
     height:auto;
 }
+
 .mobile-icons{
     display: flex;
     justify-content: space-evenly;
@@ -54,25 +67,55 @@ nav img {
     position: relative;
     right: 0.313em;
 }
+.faq-icon {
+    width: 30px;
+    
+}
+
 
 .home-icon:hover {
-    color: #089285
+    filter: invert(100%) url(#colorFilter);    
 }
 .about-icon:hover {
-    color: #089285
-}
-.faq-icon:hover {
-    color: #089285
-}
-.contact-icon:hover {
-    color: #089285
-}
-.login-icon:hover {
-    color: #089285
+    
+    filter: invert(100%) url(#colorFilter);  
 }
 
+.faq-icon:hover {
+    
+    filter: invert(100%) url(#colorFilter); 
+}
+.contact-icon:hover {
+    
+    filter: invert(100%) url(#colorFilter); 
+}
+.login-icon:hover {
+    
+    filter: invert(100%) url(#colorFilter); 
+}
+
+.home-icon-text:hover {
+    color: #089285
+}
+.about-icon-text:hover {
+    color: #089285;
+}
+
+.faq-icon-text:hover {
+    color: #089285;
+    
+}
+.contact-icon-text:hover {
+    color: #089285;
+    
+}
+.login-icon-text:hover {
+    color: #089285;
+    
+}
 .main {
     align-items: center;
+    overflow-x: hidden;
     
 }
 .main img {
@@ -84,7 +127,7 @@ nav img {
 h1 {
     color: #f34213;
     font-size: 1.188em;
-    font-weight: normal;
+    font-weight: 500;
     margin-top: 1.5em;
     margin-bottom: 0%;
     padding-left: .43em;
@@ -103,19 +146,50 @@ h2 {
 p {
     font-size: 0.875em;
     color: black;
-    line-height: 1.250em;
+    line-height: 2em;
     text-align: initial;
     padding: 1em;
     cursor: default;
-
+    max-width: 100%;
 }
-
+@media only screen and (min-width:670px) and (max-width:801px) {
+    h1{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 16px;
+    }
+    p {
+        margin: 0;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 40em;
+    }
+    .prices {
+        margin: 0;
+        position: absolute;
+        top: 72%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .social-icons {
+        margin: 0;
+        position: absolute;
+        top: 84%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
 .prices {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 1em;
     cursor: default;
+    min-width: 0;
+    
 }
 .left li {
     color: black;
@@ -135,19 +209,19 @@ li.bold {
 
 .amazon{
     position: relative;
-    left: 1em;
+    left: 1.5em;
 }
 .price-a {
     position: relative;
-    left: 1em;
+    left: 1.5em;
 }
 .ebay {
     position: relative;
-    left: 3.5em;
+    left: 4em;
 }
 .price-e {
     position: relative;
-    left: 3em;
+    left: 3.5em;
 }
 
 button {
@@ -190,10 +264,22 @@ button:hover {
 }
 .like-icon:hover {
     cursor: pointer;
+    filter: 
+    invert(0)
+    sepia(0)
+    hue-rotate(0deg)
+    saturate(1)
+    brightness(.60);
 }
   
 .comment-icon:hover {
     cursor: pointer;
+    filter: 
+    invert(0)
+    sepia(0)
+    hue-rotate(0deg)
+    saturate(1)
+    brightness(.60);
 }
 .share-icon {
     padding-left: 2.500em;
@@ -201,6 +287,12 @@ button:hover {
 }
 .share-icon:hover {
     cursor: pointer;
+    filter: 
+    invert(0)
+    sepia(0)
+    hue-rotate(0deg)
+    saturate(1)
+    brightness(.60);
 }
 .icons-text {
     display: flex;
@@ -231,7 +323,7 @@ button:hover {
 
 /*DESKTOP VIEW*/
 
-@media (min-width: 500px) {
+@media (min-width: 801px) {
 
 body {
     position: relative;
@@ -239,6 +331,7 @@ body {
     overflow-y: hidden;
     overflow-x: hidden;
 }
+
 
 nav {
 display: none;
@@ -249,31 +342,32 @@ header {
     align-items: center;
     position: relative;
     background-color: #f9f9f9;
-    height: 4.5em;
-    text-align: right;
+    background-size: cover;
+    height: 3.9em;
+    width: 100%;    
 }
 
 .logo {
     position: relative;
-    left: 5em;
-    
+    left: 5em;  
 }
 
 .navbar {
    position: relative;
-   left: 8em;
-   
+   left: 8em;   
 }
+
 .register-login {
     position: relative;
-    left: 19em;
-    
+    left: 19em;    
 }
 
 .navbar ul {
     list-style-type: none;
 }
-
+.register-login ul {
+    list-style-type: none;
+}
 header li {
     float: left;
     list-style: none;
@@ -310,26 +404,26 @@ header a {
 }
 
 h1 {
-    font-size: 1.563em;
+    font-size: 32px;
+    font-weight: unset;
     margin-top: 1em;
-    font-weight: 500;
+    width: -moz-fit-content;
+   
 }
 h2 {
-    font-size: 1.250em;
+    font-size: 27px;
+    width: -moz-fit-content;
 }
 
 .container {
-    
-    
+     
     margin-left: 6em;
 }
 
 .perfume {
     position: relative;
-    right: 5em;   
-}
-.main img {
-    
+    right: 5em;
+    width: -moz-fit-content;   
 }
 
 p {
@@ -342,6 +436,7 @@ p {
     max-width: 100%;
     width: 40em;
     text-align: initial;
+    line-height: 1.5em;
 }
 
 button {
@@ -352,8 +447,9 @@ button {
 
 .prices {
     position: relative;
+    width: 400px;
     bottom: 20em;
-    left: 11em ;
+    left: 35em ;
     
 }
 
@@ -367,19 +463,18 @@ button {
 }
 .ebay {
     position: relative;
-    left: 4.5em;
+    left: 4.95em;
+    width: 100px;
 }
 .price-e {
     position: relative;
-    left: 4em;
+    left: 4.4em;
 }
 
 .social-icons {
     position: absolute;
     left: 12.3em;
-    bottom: 12.3em;
+    bottom: 23em;
 }
-.icons-text {
-    margin-bottom: ;
-}
+
 }

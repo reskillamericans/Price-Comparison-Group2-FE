@@ -21,10 +21,10 @@
         <div class="navbar">
             <ul>
                 <li><a href="Modal.html" class="home">Home</a></li>
-                <li><a href="#" class="about">About Us</a></li>
+                <li><a href="index.html" class="about">About Us</a></li>
                 <li><a href="faq.html" class="faq">FAQ</a></li>
                 <li><a href="#" class="blog">Blog</a></li>
-                <li><a href="#" class="contact">Contact Us</a></li>
+                <li><a href="Contact.html" class="contact">Contact Us</a></li>
             </ul>
         </div>
         <div class="register-login">
@@ -45,11 +45,11 @@
             <img src="images/product-images/log-in.svg" alt="login-icon" class="login-icon" id="login-icon-position">
         </div>
         <div class="mobile-text">
-            <div id="home-text" class="home-icon">Home</div>
-            <div id="about-text" class="about-icon">About Us</div>
-            <div id="faq-text" class="faq-icon">FAQ</div>
-            <div id="contact-text" class="contact-icon">Contact Us</div>
-            <div id="login-text" class="login-icon">Log In</div>
+            <div id="home-text" class="home-icon-text">Home</div>
+            <div id="about-text" class="about-icon-text">About Us</div>
+            <div id="faq-text" class="faq-icon-text">FAQ</div>
+            <div id="contact-text" class="contact-icon-text">Contact Us</div>
+            <div id="login-text" class="login-icon-text">Log In</div>
 
         </div>
     </nav>
@@ -104,5 +104,20 @@
 
         </div>
     </div>
+
+    <svg id="svg">
+        <defs>
+          <filter id="colorFilter">
+            <feColorMatrix 
+              color-interpolation-filters="sRGB"
+              type="matrix"
+              values="0 0 0 0 0
+                      0 0.50 0 0 0
+                      0 0 0.50 0 0
+                      0 0 0 1 0 "/>
+          </filter>
+        </defs>
+      </svg>
+      
 </body>
 </html>
