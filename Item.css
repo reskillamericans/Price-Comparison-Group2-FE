@@ -47,6 +47,7 @@ i {
   text-align: center;
   /* width: 50%; */
 }
+
 @media all and (max-width: 1102px) {
   .item-text {
     color: var(--sec-c);

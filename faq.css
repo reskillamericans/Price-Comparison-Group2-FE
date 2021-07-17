@@ -159,6 +159,7 @@ button {
 .fab {
   color: var(--pri-c);
 }
+
 /* Disclaimer */
 .disclaimer .content {
   color: var(--sec-t);
