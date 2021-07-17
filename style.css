@@ -372,8 +372,6 @@ a {
 .social-links a:hover {
 	cursor: pointer;
 	filter: invert(0) sepia(0) hue-rotate(0deg) saturate(1) brightness(0.6);
-
-	background-color: black;
 }
 
 .mobile_footer {
