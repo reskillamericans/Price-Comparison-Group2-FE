@@ -335,15 +335,7 @@ h2 {
 	border-top-left-radius: 15px;
 	border-color: #089285;
 }
-.container-4 {
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-	width: 100%;
-	position: relative;
 
-	height: 40vh;
-}
 ul {
 	list-style: none;
 }
@@ -373,6 +365,9 @@ a {
 	cursor: pointer;
 	filter: invert(0) sepia(0) hue-rotate(0deg) saturate(1) brightness(0.6);
 }
+.social-links a {
+	font-size: 16px;
+}
 
 .mobile_footer {
 	display: none;
@@ -380,6 +375,13 @@ a {
 
 .h2_mobile {
 	display: none;
+}
+
+.container-4 {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 6em 0em;
 }
 
 @media all and (max-width: 375px) {
@@ -518,16 +520,6 @@ a {
 		border-color: #089285;
 	}
 
-	.container-4 {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-evenly;
-		align-items: center;
-		width: 100%;
-		position: relative;
-		height: 70vh;
-	}
-
 	footer {
 		display: none;
 		justify-content: center;
@@ -536,8 +528,7 @@ a {
 	}
 
 	.mobile_footer {
-		display: flex;
-		flex-direction: column;
+		display: block;
 	}
 
 	.mobile_copyright {
@@ -608,6 +599,7 @@ a {
 		font-size: 25px;
 		font-weight: 700;
 		padding-top: 20px;
+		margin: 2em 1em 1em;
 	}
 
 	.container-2 {
@@ -655,15 +647,12 @@ a {
 		border-color: #089285;
 	}
 
-	.container-4 {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-evenly;
-		align-items: center;
-		width: 100%;
-		position: relative;
-
-		height: 70vh;
+	.stores,
+	.quick-links {
+		margin: 2em;
+	}
+	.Follow {
+		padding: 2em;
 	}
 
 	footer {
@@ -674,12 +663,31 @@ a {
 	}
 
 	.mobile_footer {
-		display: flex;
-		flex-direction: column;
+		display: block;
 	}
 
 	.mobile_copyright {
 		position: relative;
 		left: 5px;
+	}
+
+	.quickLinks a {
+		color: #b8b4b4;
+		font-size: 15px;
+		padding: 0.5em;
+		border-right: 1px solid gray;
+	}
+	.quickLinks a:hover {
+		color: #089285;
+	}
+	.quickLinks {
+		margin: 2em 0em;
+	}
+
+	.mobile_footer p {
+		color: #aba5a5;
+		font-size: 16px;
+		padding: 2em 1em;
+		text-align: justify;
 	}
 }
