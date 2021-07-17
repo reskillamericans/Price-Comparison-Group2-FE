@@ -406,6 +406,7 @@ a {
 
 	.topnav #myLinks {
 		display: none;
+		border-bottom: #089285 solid 1px;
 	}
 
 	.topnav a {
@@ -441,6 +442,7 @@ a {
 	.navbar-mobile {
 		display: flex;
 		justify-content: space-evenly;
+		padding-top: 10px;
 	}
 
 	.container_1_mobile {
@@ -679,7 +681,5 @@ a {
 	.mobile_copyright {
 		position: relative;
 		left: 5px;
-		padding-top: 150px;
-		padding-bottom: 50px;
 	}
 }
