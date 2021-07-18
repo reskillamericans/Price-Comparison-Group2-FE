@@ -384,6 +384,21 @@ a {
 	margin: 6em 0em;
 }
 
+.quickLinks a {
+	color: #b8b4b4;
+	font-size: 18px;
+	padding: 0.5em;
+	border-right: 1px solid gray;
+}
+.quickLinks a:hover {
+	color: #089285;
+	cursor: pointer;
+}
+.quickLinks {
+	margin: 2em 0em;
+	color: #b8b4b4;
+}
+
 @media all and (max-width: 375px) {
 	body {
 		overflow-x: hidden;
@@ -679,6 +694,7 @@ a {
 	}
 	.quickLinks a:hover {
 		color: #089285;
+		cursor: pointer;
 	}
 	.quickLinks {
 		margin: 2em 0em;
