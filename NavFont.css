@@ -112,14 +112,14 @@ ul li {
   color: var(--pri-t);
 }
 .wnav a:hover {
-  color: var(--sec-t);
+  color: var(--pri-c);
 }
 .gnav a {
   color: var(--sec-t);
 }
-.gnav a:hover {
+/* .gnav a:hover {
   color: var(--pri-t);
-}
+} */
 .wnav .page {
   color: var(--pri-c);
 }
