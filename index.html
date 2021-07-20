@@ -10,8 +10,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Home Page</title>
+    <link rel="shortcut icon" href="images/Model-images/brand&logo.svg" type="image/x-icon">
+
 </head>
 
 <body>
@@ -22,28 +25,45 @@
         
         <div class="navbar">
             <ul>
-                <li><a href="Modal.html" class="home">Home</a></li>
+                <li><a href="index.html" class="home">Home</a></li>
                 <li><a href="#" class="about">About Us</a></li>
                 <li><a href="faq.html" class="faq">FAQ</a></li>
                 <li><a href="#" class="blog">Blog</a></li>
-                <li><a href="#" class="contact">Contact Us</a></li>
+                <li><a href="Contact.html" class="contact">Contact Us</a></li>
+                <li><a href="Signup.html" class="login">Register</a></li>
+                <li><a href="Login.html" class="register">Login</a></li>
             </ul>
         </div>
-        <div class="register-login">
+        <!-- <div class="register-login"> 
             <ul>
-                <li><a href="Login.html" class="login">Register</a></li>
-                <li><a href="Signup.html" class="register">Login</a></li>
-            </ul>
-        </div>
+                <li><a href="Signup.html" class="login">Register</a></li>
+                <li><a href="Login.html" class="register">Login</a></li>
+             </ul>
+         </div> -->
         
-    </header>
+    </header> 
     
 
 
     <nav>
-        <div class="hamberger__and__logo">
-            <img src="images/Landing-images/hamberger.svg" alt="hamberger" class="hamberger_pic">
-            <img src="images/Model-images/brand&logo.svg" alt="logo" class="logo">
+        <div class="topnav">
+            
+            <a href="index.html"><img src="images/Model-images/brand&logo.svg" alt="logo" class="logo"></a>
+
+            <div id="myLinks">
+                <a href="index.html" class="home">Home</a>
+                <a href="#" class="about">About Us</a>
+                <a href="faq.html" class="faq">FAQ</a>
+                <a href="#" class="blog">Blog</a>
+                <a href="Contact.html" class="contact">Contact Us</a>
+                <a href="Signup.html" class="login">Register</a>
+                <a href="Login.html" class="register">Login</a>
+
+            </div>
+              
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+             <i class="fa fa-bars"></i>
+            </a>
 
         </div>
         <div class="navbar-mobile">
@@ -81,11 +101,12 @@
     <div class="container-2">
         
         <div class="chanel-product">
-            <div class="chanel-img">
-                <img src="images/Landing-images/chanel-product.svg" alt="chanel" class="chanel" width="150px">
+            <div class="chanel-img product-img" >
+                <img src="images/Landing-images/chanel-product.svg" alt="chanel" class="chanel" >
 
-            </div>
-            <div class="chanel-text">
+            </div> 
+            
+            <div class="chanel-text product-text">
                 <p class="product-ptag">Chanel No 5 eau de <br> parfum 1,5 ml 0.005 <br> fl oz minature bottle</p>
                 <div class="grey-text">Brand New, Chanel</div>
                 <div class="price-text">$22.50</div>
@@ -95,11 +116,12 @@
         </div>
 
         <div class="dell-product">
-            <div class="dell-img">
-                <img src="images/Landing-images/dell-product.svg" alt="dell" class="dell" width="200px">
+           <div class="dell-img product-img">
+                <img src="images/Landing-images/dell-product.svg" alt="dell" class="dell" >
 
-            </div>
-            <div class="dell-text">
+            </div> 
+            
+            <div class="dell-text product-text">
                 <p class="product-ptag">Dell Latitude E5250 <br> Laptop 12.5" HD, 4GB <br> RAM, 240GB</p>
                 <div class="grey-text">Refurbished. Dell</div>
                 <div class="price-text">$212.99</div>
@@ -109,10 +131,11 @@
         </div>
 
         <div class="nikon-product">
-            <div class="nikon-img">
-                <img src="images/Landing-images/nikon-product.svg" alt="nikon" class="nikon" width="150px">
+            <div class="nikon-img product-img">
+                <img src="images/Landing-images/nikon-product.svg" alt="nikon" class="nikon" >
             </div>
-            <div class="nikon-text">
+            
+            <div class="nikon-text product-text">
                 <p class="product-ptag">Nikon Z50 Mirrorless <br> 20.9MP 4K Digital <br>Camera</p>
                 <div class="grey-text">Brand New. Nikon</div>
                 <div class="price-text">$856</div>
@@ -122,12 +145,13 @@
         </div>
 
         <div class="iphone-product">
-            <div class="iphone-img">
-                <img src="images/Landing-images/iphone (1).svg" alt="iphone" class="iphon" width="150px">
+            <div class="iphone-img product-img">
+                <img src="images/Landing-images/iphone (1).svg" alt="iphone" class="iphon" >
 
             </div>
-            <div class="iphone-text">
-                <p class="product-ptag">iphone 11 pro, <br> 124GB</p>
+            
+            <div class="iphone-text product-text">
+                <p class="product-ptag">iphone 11    pro, <br> 124GB</p>
                 <div class="grey-text">Brand New. Iphone</div>
                 <div class="price-text">$650</div>
                 <button class="compare-price-btn">compare prices</button>
@@ -137,11 +161,11 @@
         </div>
 
         <div class="airpods-product">
-            <div class="airpods-img">
-                <img src="images/Landing-images/Airpods-product.svg" alt="airpods" class="airpods" width="150px">
+            <div class="airpods-img product-img">
+                <img src="images/Landing-images/Airpods-product.svg" alt="airpods" class="airpods" >
 
             </div>
-            <div class="airpods-text">
+            <div class="airpods-text product-text">
                 <p class="product-ptag">Apple Airpods Pro <br> -with Wireless <br> Charging case.</p>
                 <div class="grey-text">Pre-Owned. Apple</div>
                 <div class="price-text">$650</div>
@@ -152,11 +176,11 @@
         </div>
 
         <div class="puma-product">
-            <div class="puma-img">
-                <img src="images/Landing-images/puma-product.svg" alt="puma" class="puma" width="200px">
+            <div class="puma-img product-img">
+                <img src="images/Landing-images/puma-product.svg" alt="puma" class="puma" >
             
             </div>
-            <div class="puma-text">
+            <div class="puma-text product-text">
                 <p class="product-ptag">Puma Caracal Unisex <br> Street Sneaker Black</p>
                 <div class="grey-text">Brand New. PUMA</div>
                 <div class="price-text">$650</div>
@@ -167,11 +191,11 @@
         </div>
 
         <div class="bodycare-product">
-            <div class="bodycare-img">
-                <img src="images/Landing-images/bodycare-product.svg" alt="bodycare" class="bodycare" width="150px">
+            <div class="bodycare-img product-img">
+                <img src="images/Landing-images/bodycare-product.svg" alt="bodycare" class="bodycare">
 
             </div>
-            <div class="bodycare-text">
+            <div class="bodycare-text product-text">
                 <p class="product-ptag">The Ordinary - Anti <br> Age Kit</p>
                 <div class="grey-text">Brand New</div>
                 <div class="price-text">$220.45</div>
@@ -182,11 +206,11 @@
         </div>
         
         <div class="birkenstock-product">
-            <div class="birkenstock-img">
-                <img src="images/Landing-images/birkenstock-product.svg" alt="birkenstock" class="birkenstock" width="150px">
+            <div class="birkenstock-img product-img">
+                <img src="images/Landing-images/birkenstock-product.svg" alt="birkenstock" class="birkenstock" >
 
             </div>
-            <div class="birkenstock-text">
+            <div class="birkenstock-text product-text">
                 <p class="product-ptag">Birkenstock Arizona <br> Black Size 4-8</p>
                 <div class="grey-text">Brand New</div>
                 <div class="price-text">$63.50</div>
@@ -197,11 +221,11 @@
         </div>
 
         <div class="polo-product">
-            <div class="polo-img">
-                <img src="images/Landing-images/polo-product.svg" alt="polp" class="polo" width="150px">
+            <div class="polo-img product-img">
+                <img src="images/Landing-images/polo-product.svg" alt="polp" class="polo">
 
             </div>
-            <div class="polo-text">
+            <div class="polo-text product-text">
                 <p class="product-ptag">Men Polo Classic fit <br> Size XL</p>
                 <div class="grey-text">Brand New</div>
                 <div class="price-text">$45.25</div>
@@ -212,11 +236,11 @@
         </div>
 
         <div class="ring-product">
-            <div class="ring-img">
-                <img src="images/Landing-images/rings-product.svg" alt="ring" class="ring" width="150px">
+            <div class="ring-img product-img">
+                <img src="images/Landing-images/rings-product.svg" alt="ring" class="ring" >
 
             </div>
-            <div class="ring-text">
+            <div class="ring-text product-text">
                 <p class="product-ptag">Women's Fashion <br> Knuckle Ring</p>
                 <div class="grey-text">Brand New</div>
                 <div class="price-text">$10.00</div>
@@ -282,14 +306,46 @@
     </div>
 
     <div class="mobile_footer">
-        <img src="images/Landing-images/mobile footer.svg" alt="mobile_disclaimer" class="mobile_disclaimer">
-        <img src="images/Landing-images/copyright mobile.svg" alt="mobile_copyright" class="mobile_copyright">
+        <p>
+            Disclaimer: Scalables.com only acts as an online
+             price comparism website, all product names, trademarks, service marks, logos, brands, designs featured within this site are the sole property of 
+             their respective brand owners and are only provided for the purpose of this site. Scalables.com acts as an independent party and shall not be considered 
+             the agent, employee, joint venture partner or otherwise of such owners or right holders. 
+             <b> Copyright       2021 Scalables Inc.
+             All Rights Reserved.</b>
+        </p>
+        <div class="quickLinks">
+            <a href="#">Privacy</a>
+            <a href="#">Cookies</a>
+            <a href="#">User Agreement</a>
+            <a href="#">About</a>
+
+        </div>
+        
 
     </div>
 
     <footer>
-        <img src="images/Landing-images/copyright.svg" alt="copyright" class="copyright">
+        <div class="quickLinks">
+            <b>Copyright      2021 Scalables Inc. All Rights Reserved.</b>
+            <a href="#">Privacy</a>
+            <a href="#">Cookies</a>
+            <a href="#">User Agreement</a>
+            <a href="#">About</a>
+
+        </div>
     </footer>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
 
 
 
