@@ -174,36 +174,37 @@ body {
 
 
 header {
+    padding: 1em 2em;
     display: flex;
     align-items: center;
     position: relative;
     background-color: #f9f9f9;
-    background-size: cover;
-    height: 3.9em;
+    justify-content: space-between;
     width: 100%;    
 }
 
 .logo {
     position: relative;
-    left: 5em;  
+    /*left: 5em;*/  
 }
 
 .navbar {
    position: relative;
-   left: 8em;   
+   font-weight: 600;
+   /*left: 8em;*/  
 }
 
-.register-login {
+/*.register-login {
     position: relative;
     left: 19em;    
-}
+}*/
 
 .navbar ul {
     list-style-type: none;
 }
-.register-login ul {
+/* .register-login ul {
     list-style-type: none;
-}
+} */
 header li {
     float: left;
     list-style: none;
@@ -212,7 +213,7 @@ header li {
 header a {
     padding: 2em;
     font-size: 1em;
-    font-weight: 500;
+    letter-spacing: .2px;
     text-decoration: none;
     color: #b8b4b4;
 }
@@ -239,13 +240,22 @@ header a {
     color: #089285;
 }
 
+.main {
+  display: flex;
+  height: 540px;
+  width: 1200px;
+  margin: 0;
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 .bigimage {
     background-color: #089285;
     position: absolute;
     height: 525px;
-    top: 100px;
-    left: 175px;
+    left: 12%;
     min-width: 400px;
     display: flex;
     justify-content: center;
@@ -259,8 +269,7 @@ header a {
 
 .form-container {
     position: absolute;
-    left: 630px;
-    top: 100px;
+    left: 50%;
     width: -moz-fit-content;
     width: fit-content;
 }
