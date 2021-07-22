@@ -43,6 +43,7 @@
 }
 .img-sec img {
   width: 100%;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-position: center;
@@ -51,8 +52,9 @@
   object-fit: contain; */
 }
 .img-sec h1 {
+  font-size: 4rem;
   font-weight: bold;
-  width: 30%;
+  width: 50%;
   text-align: center;
   position: absolute;
   top: 50%;
@@ -211,14 +213,15 @@ button {
   .content {
     padding: 25px 50px;
   }
-  /* .stuff {
-    height: 15vh;
-  } */
+  .img-sec img {
+    height: 200px;
+  }
   .img-sec h1 {
+    font-size: 2rem;
     top: 50%;
-    left: 10px;
+    left: 10%;
     padding-left: 240px;
-    width: 50%;
+    width: 75%;
   }
   button {
     height: 2.5rem;

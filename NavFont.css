@@ -131,6 +131,9 @@ a {
   padding-right: 5px;
   align-self: center;
 }
+.copyright a:hover {
+  color: Black;
+}
 
 /* Mobile Nav off in this size */
 nav {
