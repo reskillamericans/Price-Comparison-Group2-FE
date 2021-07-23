@@ -15,7 +15,7 @@ body {
     height: 530px;
     position: absolute;
     left: 50%;
-    top: 56.5%;
+    top: 55%;
     transform: translate(-50%, -50%);
 }
 
@@ -30,8 +30,9 @@ header {
     align-items: center;
     position: relative;
     background-color: #f9f9f9;
-    padding: 1em 2em;
+    padding: 0em 2em;
     justify-content: space-between;   
+    height: 4em;
 }
 
 .logo {
