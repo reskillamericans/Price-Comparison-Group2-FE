@@ -10,6 +10,15 @@ body {
     overflow-x: hidden;
 }
 
+.main {
+    width: 950px;
+    height: 530px;
+    position: absolute;
+    left: 50%;
+    top: 56.5%;
+    transform: translate(-50%, -50%);
+}
+
 @media screen and (min-width: 901px) {
     .mobile-view{
         display: none;
@@ -21,32 +30,31 @@ header {
     align-items: center;
     position: relative;
     background-color: #f9f9f9;
-    background-size: cover;
-    height: 3.9em;
-    width: 100%;    
+    padding: 1em 2em;
+    justify-content: space-between;   
 }
 
 .logo {
     position: relative;
-    left: 5em;  
+    /* left: 5em;   */
 }
 
 .navbar {
    position: relative;
-   left: 8em;   
+   /* left: 8em;    */
 }
 
-.register-login {
+/* .register-login {
     position: relative;
     left: 19em;    
-}
+} */
 
 .navbar ul {
     list-style-type: none;
 }
-.register-login ul {
+/* .register-login ul {
     list-style-type: none;
-}
+} */
 header li {
     float: left;
     list-style: none;
@@ -55,7 +63,8 @@ header li {
 header a {
     padding: 2em;
     font-size: 1em;
-    font-weight: 500;
+    font-weight: 600;
+    letter-spacing: .2px;
     text-decoration: none;
     color: #b8b4b4;
 }
@@ -87,8 +96,8 @@ header a {
     background-color: #089285;
     position: absolute;
     height: 525px;
-    top: 100px;
-    left: 175px;
+    /* top: 100px;
+    left: 175px; */
     min-width: 400px;
     display: flex;
     justify-content: center;
@@ -102,10 +111,10 @@ header a {
 
 .form-container {
     position: absolute;
-    left: 630px;
-    top: 100px;
-    width: -moz-fit-content;
-    width: fit-content;
+    left: 47%;
+    /* top: 100px; */
+    /* width: -moz-fit-content;
+    width: fit-content; */
 }
 
 form {
@@ -259,7 +268,7 @@ input[type=submit]:hover{
       
       input  {
             height: 3.8em;
-            width: 20em;
+            width: 100%;
             top: 0.625em;
             border-top-style: hidden;
             border-right-style: hidden;
@@ -350,6 +359,7 @@ input[type=submit]:hover{
       }
       
       .bottom {
+          display: flex;
           justify-content: space-between;
           margin-bottom: 3em;
           margin-top: .3em;
