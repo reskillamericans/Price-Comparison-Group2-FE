@@ -40,26 +40,24 @@
 }
 .img-sec {
   position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
 }
 .img-sec img {
   width: 100%;
-  height: 400px;
-  margin-left: auto;
-  margin-right: auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  /* width: 100%;
-  object-fit: contain; */
+  align-self: center;
+  justify-self: center;
+  grid-area: 1/1/2/2;
 }
 .img-sec h1 {
+  grid-area: 1/1/2/2;
+  align-self: center;
+  justify-self: center;
   font-size: 4rem;
   font-weight: bold;
   width: 50%;
   text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 /* Home */
 .home-sec .content {
@@ -213,15 +211,12 @@ button {
   .content {
     padding: 25px 50px;
   }
-  .img-sec img {
-    height: 200px;
-  }
   .img-sec h1 {
-    font-size: 2rem;
-    top: 50%;
-    left: 10%;
-    padding-left: 240px;
-    width: 75%;
+    font-size: 2em;
+    width: 100%;
+    justify-self: start;
+    text-align: left;
+    padding-left: 50px;
   }
   button {
     height: 2.5rem;
