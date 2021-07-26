@@ -81,23 +81,26 @@ button {
 }
 .oth-btn:hover {
   color: var(--background);
-  background-color: var(--sec-t);
-  border-color: var(--sec-t);
+  background-color: var(--pri-c);
+  border-color: var(--background);
 }
 .home-title {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
 }
 .y-btn {
-  color: var(--background);
-  background-color: var(--pri-c);
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
+  color: var(--pri-c);
+  background-color: var(--background);
+  border: 2px solid var(--pri-c);
 }
 .y-btn:hover {
   color: var(--background);
-  background-color: var(--sec-t);
-  border-color: var(--sec-t);
+  background-color: var(--pri-c);
+  border-color: var(--background);
+}
+.lbtn {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
 }
 .mbtn {
   grid-column: 2 / 3;
