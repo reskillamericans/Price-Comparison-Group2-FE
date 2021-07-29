@@ -11,12 +11,15 @@ body {
 }
 
 .main {
-    width: 950px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3em;
+    /* width: 950px;
     height: 530px;
     position: absolute;
     left: 50%;
     top: 55%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
 }
 
 @media screen and (min-width: 901px) {
@@ -94,14 +97,15 @@ header a {
 
 
 .bigimage {
+    display: flex;
     background-color: #089285;
-    position: absolute;
-    height: 525px;
+    /* position: absolute;
+    height: 525px; */
     /* top: 100px;
     left: 175px; */
-    min-width: 400px;
+    /* min-width: 400px;
     display: flex;
-    justify-content: center;
+    justify-content: center; */
     align-items: center;
 }
 .bigimage img {
@@ -110,13 +114,13 @@ header a {
     object-fit: cover;
 }
 
-.form-container {
+/* .form-container {
     position: absolute;
     left: 47%;
-    /* top: 100px; */
-    /* width: -moz-fit-content;
-    width: fit-content; */
-}
+    top: 100px; 
+    width: -moz-fit-content;
+    width: fit-content; 
+} */
 
 form {
     display: flex;
@@ -150,7 +154,7 @@ color: black;
 font-size: 14px;
 font-weight: 400;
 /* margin-bottom: 10px; */
-margin-top: 20px;
+margin-top: 25px;
 
 }
 
@@ -224,15 +228,34 @@ input[type=submit]:hover{
       }
       
       .box {
+        width: 300px;
         max-width: 100%;
         height: auto;  
         position: absolute;
         left: 50%;
         top: 65%;
-        transform: translate(-50%, -50%);
-        
-        
+        transform: translate(-50%, -50%);   
       }
+
+     /* ----------- iPad and kindle Fire HDX ----------- */
+
+/* Portrait */
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 800px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+
+    .box {
+        width: 300px;
+        max-width: 100%;
+        height: auto;  
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -50%);   
+      }
+
+}
       
       .makeup img {
         display: block;
