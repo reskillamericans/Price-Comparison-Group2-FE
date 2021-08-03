@@ -1,12 +1,24 @@
+body * {
+  margin: 0;
+}
+
 .item-text {
   color: var(--sec-c);
-  padding: 20px 100px;
+  word-wrap: break-word;
+}
+.item-text .text1 {
+  padding: 20px 150px 0 150px;
+}
+.item-text .text2 {
+  padding: 0 150px 20px 150px;
 }
 .items {
-  display: grid;
+  display: flex;
+  flex-direction: row;
+  /* display: grid;
   grid-template-columns: 5% 1fr 1fr 5%;
   grid-template-rows: 100%;
-  column-gap: 10%;
+  column-gap: 10%; */
   justify-content: space-evenly;
 }
 .box {
@@ -49,14 +61,33 @@ i {
 }
 
 @media all and (max-width: 1102px) {
-  .item-text {
-    color: var(--sec-c);
-    padding: 20px 50px;
+  .item-text .text1 {
+    padding: 20px 100px 0 100px;
+  }
+  .item-text .text2 {
+    padding: 0 100px 20px 100px;
+  }
+  .items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .box {
+    width: 60%;
+  }
+  .ebay {
+    margin-top: 20px;
   }
 }
 
 @media all and (max-width: 400px) {
-  .item-text {
-    padding: 10px 25px;
+  .item-text .text1 {
+    padding: 20px 50px 0 50px;
+  }
+  .item-text .text2 {
+    padding: 0 50px 20px 50px;
+  }
+  .ebay {
+    margin-top: 10px;
   }
 }
