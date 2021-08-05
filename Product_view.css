@@ -248,3 +248,15 @@ button:hover {
     }
 
     }
+
+    /* IPAD VIEW */
+
+    @media screen and (min-width: 414px) and ( max-width: 991px) {
+        header {
+        height: auto;
+        flex-direction: column;
+        }
+        header a {
+        padding: 1em 1em;
+        }
+    }
