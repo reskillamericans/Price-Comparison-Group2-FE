@@ -62,7 +62,7 @@ header a {
 .faq:hover {
 	color: #089285;
 }
-.blog:hover {
+.product:hover {
 	color: #089285;
 }
 .contact:hover {
@@ -84,12 +84,14 @@ a {
 	background-image: url(images/Landing-images/background-search.svg);
 	background-repeat: none;
 	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 h1 {
 	text-align: center;
 	font-size: 50px;
 	font-weight: bold;
-	padding-top: 100px;
 }
 
 .container_1_mobile {
@@ -98,53 +100,59 @@ h1 {
 
 .container-2 {
 	display: flex;
-	justify-items: center;
-	width: 97%;
-	height: 30vh;
-	padding: 2em;
+	justify-content: center;
+	align-items: center;
+	padding: 3em 2em;
 }
 .container-2 p {
-	font-size: 25px;
+	font-size: 20px;
+	line-height: 2;
+	text-align: justify;
+	flex-basis: 50%;
 }
 .image-1 {
 	padding-left: 40px;
+	width: 30%;
 }
 
 .container-3 {
 	display: flex;
-	width: 97%;
-	height: 30vh;
-	padding: 2em;
+	align-items: center;
+	padding: 3em 2em;
+	justify-content: center;
 }
 .container-3 p {
-	font-size: 25px;
+	font-size: 20px;
+	line-height: 2;
+	text-align: justify;
+}
+
+.container-3 div,
+.container-4 div {
+	flex-basis: 50%;
 }
 
 .image-2 {
 	padding-right: 20px;
-}
-
-.p2 h1 {
-	text-align: start;
+	width: 30%;
 }
 
 .container-4 {
 	display: flex;
-	width: 97%;
-	height: 30vh;
-	padding: 2em;
+	align-items: center;
+	padding: 3em 2em;
+	justify-content: center;
 }
 
 .container-4 p {
-	font-size: 25px;
+	font-size: 20px;
+	line-height: 2;
+	text-align: justify;
 }
 
 .image-3 {
-	padding-right: 20px;
-}
-
-.p3 h1 {
-	text-align: start;
+	padding-left: 20px;
+	width: 30%;
 }
 
 .container-5 {
@@ -272,6 +280,8 @@ a {
 
 .disclaimer {
 	color: #b8b4b4;
+	padding: 1em 3em;
+	text-align: justify;
 }
 
 footer {
@@ -280,10 +290,104 @@ footer {
 	width: 100%;
 	position: relative;
 }
+@media all and (max-width: 991px) {
+	.container-2 h1,
+	.container-3 h1,
+	.container-4 h1 {
+		font-size: 30px;
+	}
+	header {
+		display: none;
+	}
 
-@media all and (max-width: 911px) {
+	nav {
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+	.topnav {
+		width: 100%;
+		overflow: hidden;
+
+		position: relative;
+	}
+
+	.topnav #myLinks {
+		display: none;
+		border-bottom: #089285 solid 1px;
+	}
+
+	.topnav a {
+		color: #089285;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 18px;
+		display: block;
+	}
+
+	.topnav a.icon {
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	.topnav a:hover {
+		background-color: #ddd;
+		color: #089285;
+	}
+
+	.active {
+		background-color: #04aa6d;
+		color: white;
+	}
+
+	.logo {
+		position: relative;
+		/* left: 5cm; */
+	}
+
+	.navbar-mobile {
+		display: flex;
+		justify-content: space-evenly;
+		padding-top: 10px;
+	}
+
+	.social-links a:hover {
+		cursor: pointer;
+		filter: invert(0) sepia(0) hue-rotate(0deg) saturate(1) brightness(0.6);
+	}
 	body {
 		overflow-x: hidden;
+	}
+
+	header {
+		display: none;
+	}
+
+	nav {
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+
+	.navbar-mobile {
+		display: flex;
+		justify-content: space-evenly;
+	}
+	.quickLinks b {
+		display: block;
+		padding-bottom: 1em;
+	}
+}
+@media all and (max-width: 650px) {
+	body {
+		overflow-x: hidden;
+	}
+	.about-box h1 {
+		font-size: 40px;
 	}
 
 	header {
@@ -368,7 +472,7 @@ footer {
 		justify-content: space-evenly;
 	}
 
-	.quickLinks a {
+	/* .quickLinks a { 
 		color: #b8b4b4;
 		font-size: 15px;
 		padding: 0.5em;
@@ -381,25 +485,40 @@ footer {
 	.quickLinks {
 		margin: 2em 0em;
 	}
-
-	.container_1_mobile {
+  */
+	/*.container_1_mobile {
 		display: flex;
 		width: 100%;
-	}
+	}*/
 
-	.container {
+	/*.container {
 		display: none;
 		justify-content: center;
 		align-items: center;
+	}*/
+
+	.container-2,
+	.container-3,
+	.container-4 {
+		flex-wrap: wrap;
 	}
 
-	.background-search {
+	.container-2 p,
+	.container-3 div,
+	.container-4 div {
+		flex-basis: auto;
+	}
+
+	.image-1,
+	.image-2,
+	.image-3 {
+		width: 100%;
+		padding: 0em;
+	}
+
+	/*.background-search {
 		position: relative;
 		width: 100%;
-	}
-
-	.image-1 {
-		display: none;
 	}
 
 	.container-2 {
@@ -412,9 +531,6 @@ footer {
 		font-size: 15px;
 	}
 
-	.image-2 {
-		display: none;
-	}
 	.container-3 {
 		display: flex;
 		width: 85%;
@@ -425,13 +541,6 @@ footer {
 		font-size: 15px;
 	}
 
-	.p2 h1 {
-		font-size: 20px;
-	}
-
-	.image-3 {
-		display: none;
-	}
 	.container-4 {
 		display: flex;
 		width: 85%;
@@ -440,10 +549,6 @@ footer {
 
 	.container-4 p {
 		font-size: 15px;
-	}
-
-	.p3 h1 {
-		font-size: 20px;
 	}
 
 	.container-5 {
@@ -483,7 +588,7 @@ footer {
 		border-top-left-radius: 15px;
 		border-color: #089285;
 	}
-
+*/
 	footer {
 		display: none;
 		justify-content: center;
