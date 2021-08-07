@@ -67,7 +67,7 @@ body{
 	cursor: pointer;
 }*/
 
-@media only screen and (max-width: 1440px) {
+/* @media only screen and (max-width: 1440px) { */
 
 /*
 header {
@@ -697,11 +697,11 @@ color: var(--greycolor);
 display: none;
 }
 
-}
+/* } */
 
 
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 991px) {
 
 .logo {
 	position:absolute;
