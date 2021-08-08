@@ -23,6 +23,7 @@ body * {
   justify-content: flex-end;
   align-items: center;
   border: 1px solid var(--pri-c);
+  width: 40%;
 }
 .amazon {
   grid-column: 2 / 3;
